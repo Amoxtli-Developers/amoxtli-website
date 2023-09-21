@@ -17,11 +17,35 @@
 }
 
 .navbar-logo {
-  color: #222;
+  color: #fa206f;
   font-size: 2rem;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
+  position: relative; /* Add position relative to create the animation */
+  transition: color 0.3s ease-in-out; /* Add a color transition for smoothness */
+}
+
+.navbar-logo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fa206f;
+  transform: scaleX(0); /* Initially, scale the line to 0 width */
+  transform-origin: 100%; /* Start scaling from the right */
+  transition: transform 0.3s ease-in-out; /* Add a transform transition for the animation */
+}
+
+.navbar-logo:hover {
+  color: #fa206f; /* Change text color on hover */
+}
+
+.navbar-logo:hover::before {
+  transform: scaleX(1); /* Scale the line to full width on hover */
+  transform-origin: 0%; /* Start scaling from the left */
 }
 
 .fa-react {
@@ -53,12 +77,12 @@
 }
 
 .nav-links:hover {
-  color: #01959a;
+  color: #fa206f;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
 
-button {
+.talkToUs {
   padding: 0.5rem 1rem;
   white-space: nowrap;
   border-radius: 0.5rem;
@@ -67,11 +91,15 @@ button {
   border: none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  text-decoration: none;
+  background-color: #fa206f;
+  color: white;
 }
 
-button:hover {
-  background-color: #151516;
+.talkToUs:hover {
+  background-color: #fa206f;
   color: #fff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); /* Add box-shadow on hover */
 }
 
 .fa-bars {
@@ -129,7 +157,7 @@ button:hover {
   }
 
   .nav-links:hover {
-    color: #01959a;
+    color: #fa206f;
     transition: none;
   }
 
@@ -150,7 +178,7 @@ button:hover {
     border-radius: 4px;
     width: 80%;
     text-decoration: none;
-    color: #01959a;
+    color: #fa206f;
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 1.2rem;
@@ -159,7 +187,7 @@ button:hover {
     color: #222;
   }
 
-  button {
+  .talkToUs {
     display: none;
   }
 }

@@ -14,7 +14,7 @@ class Navbar extends Component {
       <nav className="NavbarItems obj-width">
         <h1>
           <Link className="navbar-logo" to={"/"}>
-            Trippy
+            Amoxtli
           </Link>
         </h1>
         <div className="menu-icons" onClick={this.handleClick}>
@@ -34,7 +34,7 @@ class Navbar extends Component {
               </li>
             );
           })}
-          <button>Sign Up</button>
+          <Link className="talkToUs" to={"/talk-to-us"}>Talk to us</Link>
         </ul>
       </nav>
     );

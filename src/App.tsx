@@ -4,7 +4,9 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
-import Contact from "./routes/Contact";
+import How from "./routes/How";
+import Cases from "./routes/Cases";
+import Talk from "./routes/Talk";
 import "./App.css";
 
 interface WrapperProps {
@@ -27,7 +29,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/cases" element={<Cases />} />
+          <Route path="/how-it-works" element={<How />} />
+          <Route path="/talk-to-us" element={<Talk />} />
         </Routes>
       </Wrapper>
     </div>

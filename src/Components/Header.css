@@ -1,0 +1,21 @@
+.cta-talk {
+  padding: 1rem 2rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  background-color: #fa206f;
+  color: white;
+}
+
+.cta-talk:hover {
+  background-color: #fa206f;
+  color: #fff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); /* Add box-shadow on hover */
+}
+
+
