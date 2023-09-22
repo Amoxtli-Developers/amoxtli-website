@@ -27,7 +27,7 @@ const Header = ({ imageUrl, title, text }) => {
         <Grid item xs={12} sm={6}>
           <img
             src={imageUrl}
-            alt="Image"
+            alt="header-logo"
             style={{ width: "100%", borderRadius: "2rem" }}
           />
         </Grid>

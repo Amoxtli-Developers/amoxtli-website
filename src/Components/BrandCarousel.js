@@ -31,7 +31,7 @@ const BrandCarousel = () => {
       >
         {imageUrls.map((imageUrl, index) => (
           <div className="item" key={index}>
-            <img src={imageUrl} alt={`Image ${index + 1}`} />
+            <img src={imageUrl} alt={`client ${index + 1000}`} />
           </div>
         ))}
       </OwlCarousel>

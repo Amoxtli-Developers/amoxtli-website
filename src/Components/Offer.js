@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
 import "./Offer.css";
-import { Box, List, ListItem, ListItemText, ListItemIcon } from "@mui/material";
+import { Box, List, ListItem, ListItemIcon } from "@mui/material";
 
 
 const Offer = ({ imageUrl, title, services }) => {
@@ -14,7 +14,7 @@ const Offer = ({ imageUrl, title, services }) => {
         <Grid item xs={12} sm={5}>
           <img
             src={imageUrl}
-            alt="Image"
+            alt="offer-logo"
             style={{ width: "65%", borderRadius: "2rem" }}
           />
         </Grid>
