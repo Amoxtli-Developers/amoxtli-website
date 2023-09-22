@@ -6,18 +6,21 @@ import { Box } from "@mui/material";
 
 const Header = ({ imageUrl, title, text }) => {
   return (
-    <Box sx={{ margin: "10rem 7rem 5rem 7rem" }}>
-      <Grid  container spacing={2}>
+    <Box className="main-header" >
+      <Grid container spacing={2}>
         {/* Left Column: Text, Title, and Button */}
         <Grid item xs={12} sm={6}>
           <div>
             <h2 className="header-title">{title}</h2>
             <p className="header-text">{text}</p>
-            <div>
-              <button className="cta-talk" to={"/talk-to-us"}>
-                Let's talk
+            <Link to={"/talk-to-us"}>
+              <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Let's talk</span>
               </button>
-            </div>
+            </Link>
           </div>
         </Grid>
         {/* Right Column: Image */}

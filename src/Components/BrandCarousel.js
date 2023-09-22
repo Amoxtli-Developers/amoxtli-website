@@ -14,7 +14,7 @@ const BrandCarousel = () => {
   ];
 
   return (
-    <Box sx={{ margin: "0rem 7rem 5rem 7rem" }}>
+    <Box className="section">
       <h3 className="section-title">Our clients</h3>
       <OwlCarousel
         className="owl-theme"
