@@ -11,7 +11,9 @@ import service4 from "../assets/ux.png";
 import service5 from "../assets/ecommerce.png";
 import BrandCarousel from "../Components/BrandCarousel";
 import Offer from "../Components/Offer";
-
+import Testimonial from "../Components/Testimonial";
+import Technologies from "../Components/Technologies";
+import CustonCtaBanner from "../Components/CtaBanner";
 
 const services = [
   {
@@ -52,6 +54,9 @@ function Home() {
       />
       <BrandCarousel />
       <Offer imageUrl={imagen2} title="What we offer" services={services} />
+      <Testimonial />
+      <Technologies />
+      <CustonCtaBanner />
       <Footer />
     </div>
   );

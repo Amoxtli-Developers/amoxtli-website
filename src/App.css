@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -157,4 +158,10 @@ button:hover .circle .icon.arrow {
 
 button:hover .button-text {
   color: var(--white);
+}
+
+.cta-banner{
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 5rem;
+  border-radius: 2rem;
 }

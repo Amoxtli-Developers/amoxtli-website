@@ -4,12 +4,24 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { Box } from "@mui/material";
 
+import imagen from "../assets/clients/asesorista.png";
+import imagen2 from "../assets/clients/fratellis.png";
+import imagen3 from "../assets/clients/cajs.png";
+import imagen4 from "../assets/clients/calena.png";
+import imagen5 from "../assets/clients/hilitos.png";
+import imagen6 from "../assets/clients/contadores.png";
+import imagen7 from "../assets/clients/tec.png";
+
 const BrandCarousel = () => {
   // Define an array of image URLs
   const imageUrls = [
-    "https://images.unsplash.com/photo-1586016413664-864c0dd76f53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "https://images.unsplash.com/photo-1586016413664-864c0dd76f53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "https://images.unsplash.com/photo-1586016413664-864c0dd76f53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    imagen,
+    imagen2,
+    imagen3,
+    imagen4,
+    imagen5,
+    imagen6,
+    imagen7,
     // Add more image URLs as needed
   ];
 

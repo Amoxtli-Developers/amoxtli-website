@@ -61,6 +61,7 @@
   align-items: center;
   text-align: center;
   justify-content: end;
+  margin-bottom: 0;
 }
 
 .nav-links {

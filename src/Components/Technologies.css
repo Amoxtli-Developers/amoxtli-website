@@ -1,0 +1,78 @@
+/* Technologies.css */
+
+/* Style for the selected tab */
+.custom-tabs {
+  justify-content: center;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  --bs-nav-tabs-border-width: none;
+  --bs-nav-tabs-link-active-color: #fa206f;
+  margin-bottom: 3.5rem;
+}
+
+.nav-link {
+  font-size: 20px;
+  margin-bottom: 2rem;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.nav-item {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.nav {
+  --bs-nav-link-color: black;
+  --bs-nav-link-hover-color: black;
+}
+
+/* Technologies.css */
+
+/* Style for the selected tab */
+.custom-tabs .nav-link.active {
+  border-bottom: 2px solid #fa206f; /* Add a bottom border to create the underline effect */
+  color: #fa206f; /* Change the text color */
+}
+
+/* Style for the tab content */
+.custom-tabs .tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Add custom animation to the selected tab content (if desired) */
+.custom-tabs .tab-content.fade.in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style for the technology logos */
+.technology-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px; /* Adjust the gap between logos */
+}
+
+.technology-logos img {
+  max-width: 70px; /* Adjust the maximum width of the logos */
+  height: auto;
+}
+
+
+
+.technology-title{
+    font-weight: 300;
+}
