@@ -37,6 +37,13 @@
   color: #fa206f; /* Change the text color */
 }
 
+.custom-tabs .nav-link {
+  border-bottom: 15px solid #e7e9eb; /* Add a bottom border to create the underline effect */
+  color: black; /* Change the text color */
+}
+
+
+
 /* Style for the tab content */
 .custom-tabs .tab-content {
   padding: 20px;
@@ -71,8 +78,27 @@
   height: auto;
 }
 
+.technology-title {
+  font-weight: 300;
+}
 
+.phase-title{
+    font-size: 36px;
+    margin-bottom: 2rem;
+}
 
-.technology-title{
-    font-weight: 300;
+.phase-subtitle{
+    font-size: 14px;
+    color: #585e68;
+    margin-bottom: 0;
+}
+
+.phase-text{
+    font-size: 18px;
+    color: #101828;
+    margin-bottom: 0;
+}
+
+.phase-attributes{
+    margin-bottom: 2rem;
 }
