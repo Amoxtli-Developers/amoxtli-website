@@ -37,8 +37,8 @@ const BrandCarousel = () => {
         autoplay={true}
         autoplayTimeout={5000}
         responsive={{
-          400: { items: 1 },
-          920: { items: 5 },
+          200: { items: 1 },
+          900: { items: 5 },
         }}
       >
         {imageUrls.map((imageUrl, index) => (
