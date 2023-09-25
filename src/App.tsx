@@ -1,6 +1,5 @@
 import React, { ReactNode, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
@@ -8,6 +7,7 @@ import How from "./routes/How";
 import Cases from "./routes/Cases";
 import Talk from "./routes/Talk";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
 interface WrapperProps {
   children: ReactNode;
@@ -34,6 +34,7 @@ function App() {
           <Route path="/talk-to-us" element={<Talk />} />
         </Routes>
       </Wrapper>
+      
     </div>
   );
 }

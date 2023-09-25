@@ -1,0 +1,12 @@
+/* Regular font size for title */
+.cta-title {
+  font-size: 55px!important;
+}
+
+/* Media query for screens with a minimum width of 600px */
+@media (min-width: 600px) {
+  /* Increase font size for title */
+  .header-title {
+    font-size: 30px;
+  }
+}

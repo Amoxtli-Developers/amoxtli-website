@@ -162,6 +162,12 @@ button:hover .button-text {
 
 .cta-banner{
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  padding: 5rem;
+  padding: 3rem;
   border-radius: 2rem;
+}
+
+
+.underlined-text{
+  font-weight: 700;
+  color: #fa206f;
 }

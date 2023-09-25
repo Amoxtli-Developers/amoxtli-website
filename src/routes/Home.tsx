@@ -49,8 +49,7 @@ function Home() {
       <Navbar />
       <Header
         imageUrl={imagen}
-        title="Your Title"
-        text="Your description text goes here. You can add more text as needed."
+        title="Who we are"
       />
       <BrandCarousel />
       <Offer imageUrl={imagen2} title="What we offer" services={services} />
