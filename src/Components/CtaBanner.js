@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const CustonCtaBanner = () => {
+const CustomCtaBanner = () => {
   return (
     <Box className="section cta-banner" sx={{ marginBottom: "4rem" }}>
       <Grid container justifyContent="center">
@@ -54,4 +54,4 @@ const CustonCtaBanner = () => {
   );
 };
 
-export default CustonCtaBanner;
+export default CustomCtaBanner;

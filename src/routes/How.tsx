@@ -2,48 +2,61 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import imagen2 from "../assets/pexels-junior-teixeira-2047905.jpg";
-import service1 from "../assets/sitio-web.png";
-import service2 from "../assets/software.png";
-import service3 from "../assets/seo.png";
-import service4 from "../assets/ux.png";
-import service5 from "../assets/ecommerce.png";
+import service1 from "../assets/how-it-works/development.png";
+import service2 from "../assets/how-it-works/team.png";
+import service3 from "../assets/how-it-works/business.png";
+import service4 from "../assets/how-it-works/process.png";
 import HowItWorks from "../Components/HowItWorks";
 import Process from "../Components/Process";
+import CustomCtaBanner from "../Components/CtaBanner";
+import PricingCard from "../Components/PricingCard";
+import Title from "../Components/Title";
+import imagen from "../assets/pexels-christina-morillo-1181467.jpg";
+import Personalized from "../Components/Personalized";
 
 const services = [
   {
     iconUrl: service1, // Replace with the actual URL
-    title: "Web and Mobile Development",
-    text: "Crafting engaging websites and mobile apps to bring your digital vision to life.",
+    title: "We use the most powerful frameworks to build your site",
+    text: "Leveraging cutting-edge frameworks and technologies to create a dynamic and responsive online presence for your business. Our expert developers ensure your website is at the forefront of web innovation.",
   },
   {
     iconUrl: service2, // Replace with the actual URL
-    title: "Software Development",
-    text: "Building custom software solutions for streamlined operations.",
+    title: "We have the best developer team",
+    text: "Our team of skilled developers is dedicated to building tailored software solutions that streamline your operations. We bring your software ideas to life with precision and efficiency.",
   },
   {
     iconUrl: service3, // Replace with the actual URL
-    title: "SEO and Digital Marketing",
-    text: "Boosting online visibility and implementing winning digital strategies.",
+    title: "We aim to make your website as unique as your business",
+    text: "Elevate your online visibility with our custom web design and digital strategies. We understand that your business is one-of-a-kind, and we craft websites that reflect your uniqueness, setting you apart from the competition.",
   },
   {
     iconUrl: service4, // Replace with the actual URL
-    title: "UX/UI Design",
-    text: "Creating intuitive, visually appealing interfaces for seamless user experiences.",
-  },
-  {
-    iconUrl: service5, // Replace with the actual URL
-    title: "E-Commerce Development",
-    text: "Maximizing online sales with secure, user-friendly online stores.",
+    title: "We follow a rigorous process to ensure your satisfaction",
+    text: "Our meticulous approach involves creating intuitive and visually captivating interfaces, guaranteeing a seamless and satisfying user experience. We're dedicated to turning your vision into a user-friendly reality.",
   },
 ];
+
+const box_type = ["One Page", "Landing Page", "eCommerce"];
 
 function How() {
   return (
     <>
       <Navbar />
-      <HowItWorks imageUrl={imagen2} title={"How it Works"} services={services} />
+      <HowItWorks
+        imageUrl={imagen2}
+        title={"How it Works"}
+        services={services}
+      />
       <Process />
+      <Title title={"Websites Pricing"} />
+      <div className="full_container">
+        {box_type.map((el) => {
+          return <PricingCard box_type_text={el} />;
+        })}
+      </div>
+      <Personalized imageUrl={imagen} title={"Personalized follow-up"} />
+      <CustomCtaBanner />
       <Footer />
     </>
   );
