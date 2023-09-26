@@ -26,6 +26,7 @@ function App() {
     <div className="App">
       <Wrapper>
         <Routes>
+          <Route path="*" element={<App />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
