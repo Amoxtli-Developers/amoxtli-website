@@ -1,40 +1,66 @@
 /* Default styles for larger screens */
 .card {
-    display: flex;
-    border: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 2rem;
-    text-align: left;
-    width: 70%;
-  }
-  
-  .card-body {
-    margin: 0rem 2rem 0rem 2rem;
-    display: flex;
-  }
-  
-  .badges {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  /* Styles for mobile screens */
-  @media (max-width: 768px) {
-    .card-body {
-      flex-direction: column; /* Stack content vertically on small screens */
-    }
-  
-    .badges {
-      flex-direction: row; /* Display categories horizontally on small screens */
-    }
-  
-    .card-img {
-      order: -1; /* Move the image to the top of the card on small screens */
-      margin-bottom: 1rem; /* Add spacing between the image and other content */
-    }
+  display: flex;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  text-align: left;
+  width: 70%;
+}
 
-    .card {
-      width: 100%;
-    }
+.card-body {
+  margin-left: 1rem;
+  margin-right: 0;
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-text-container {
+  display: "flex";
+  flex-wrap: "wrap";
+}
+
+.card-image-container {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+  .card-body {
+    flex-direction: column; /* Stack content vertically on small screens */
+    margin: 0;
+    padding: 0;
   }
-  
+
+  .card-image-container {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+
+  .badges {
+    flex-direction: row; /* Display categories horizontally on small screens */
+  }
+
+  .card-img {
+    order: -1; /* Move the image to the top of the card on small screens */
+    margin-bottom: 1rem; /* Add spacing between the image and other content */
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-text-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

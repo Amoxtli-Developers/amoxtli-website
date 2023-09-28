@@ -1,14 +1,10 @@
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import React from "react";
-import Badge from "react-bootstrap/Badge"; // Import the Badge component
 import "./PortfolioCards.css";
 
 const buttonStyle = {
-  backgroundColor: "white",
   border: "none",
-  color: "#fa206f",
   transition: "background-color 0.3s, box-shadow 0.3s",
 };
 
@@ -20,33 +16,55 @@ const arrowHoverStyle = {
   transform: "rotate(-45deg)",
 };
 
-const badgeStyle = {
-  backgroundColor: "#ffcc00", // Set your personalized background color here
-  marginRight: "0.5rem",
-  marginBottom: "0.5rem",
-  color: "black",
-  borderRadius: "3rem",
-  padding: 0,
-};
-
-function PortfolioCard({ title, description, imageSrc, categories }) {
+function PortfolioCard({
+  title,
+  description,
+  imageSrc,
+  categories,
+  btnColor,
+  cardColor,
+  titleColor,
+  textColor,
+  badgeColor,
+  badgeTextColor,
+}) {
   const [isHovered, setHovered] = React.useState(false);
 
+  const badgeStyle = {
+    backgroundColor: badgeColor, // Set your personalized background color here
+    marginRight: "1rem",
+    marginBottom: "0.2rem",
+    color: badgeTextColor,
+    borderRadius: "3rem",
+    padding: "5px 15px",
+  };
+
   return (
-    <Card>
+    <Card style={{ backgroundColor: cardColor }}>
       <Card.Body>
-        <div style={{ flex: 1 }}>
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
+        <div
+          className="card-text-container"
+          style={{ flex: 1, paddingTop: "2rem", paddingBottom: "2rem" }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              marginBottom: "1rem",
+            }}
+          >
             {categories.map((category, index) => (
-              <Badge key={index} bg="light" style={badgeStyle}>
-                <p style={{ margin: "1rem", fontWeight: 400 }}>{category}</p>
-              </Badge>
+              <badge key={index} style={badgeStyle}>
+                <span style={{ fontWeight: 400, fontSize: "15px" }}>
+                  {category}
+                </span>
+              </badge>
             ))}
           </div>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>{description}</Card.Text>
-          <Button
-            style={buttonStyle}
+          <Card.Title style={{ color: titleColor }}>{title}</Card.Title>
+          <Card.Text style={{ color: textColor }}>{description}</Card.Text>
+          <button
+            style={{ buttonStyle, color: btnColor }}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
@@ -54,10 +72,14 @@ function PortfolioCard({ title, description, imageSrc, categories }) {
             <ArrowForwardIcon
               style={{ ...arrowStyle, ...(isHovered && arrowHoverStyle) }}
             />
-          </Button>
+          </button>
         </div>
         <div style={{ flex: 1 }}>
-          <Card.Img variant="top" src={imageSrc} />
+          <Card.Img
+            className="card-image-container"
+            variant="top"
+            src={imageSrc}
+          />
         </div>
       </Card.Body>
     </Card>
