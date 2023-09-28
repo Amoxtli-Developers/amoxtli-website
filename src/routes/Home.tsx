@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
@@ -14,6 +13,7 @@ import Offer from "../Components/Offer";
 import Testimonial from "../Components/Testimonial";
 import Technologies from "../Components/Technologies";
 import CustomCtaBanner from "../Components/CtaBanner";
+import React, { Suspense } from "react";
 
 const services = [
   {
@@ -47,13 +47,12 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Header
-        imageUrl={imagen}
-        title="Who we are"
-      />
+      <Header imageUrl={imagen} title="Who we are" />
       <BrandCarousel />
       <Offer imageUrl={imagen2} title="What we offer" services={services} />
-      <Testimonial />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Testimonial />
+      </Suspense>
       <Technologies />
       <CustomCtaBanner />
       <Footer />

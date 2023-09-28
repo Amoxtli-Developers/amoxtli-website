@@ -43,7 +43,7 @@ const Header = ({ imageUrl, title }) => {
               changing digital landscape.
             </p>
 
-            <Link to={"/service"}>
+            <Link to={"/services"}>
               <button class="learn-more">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>

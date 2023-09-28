@@ -11,7 +11,7 @@ const Header = ({ imageUrl, title }) => {
         {/* Left Column: Text, Title, and Button */}
         <Grid item xs={12} sm={6}>
           <div>
-            <h2 className="header-title">{title}</h2>
+            <h1 className="header-title">{title}</h1>
             <p className="header-text">
               <span className="underlined-text">Amoxtli Web Developers</span> is
               a dynamic organization founded by a group of Mexican students from

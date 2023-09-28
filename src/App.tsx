@@ -4,7 +4,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
 import How from "./routes/How";
-import Cases from "./routes/Cases";
+import Client from "./routes/Client";
 import Talk from "./routes/Talk";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -29,8 +29,8 @@ function App() {
           <Route path="*" element={<App />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/cases" element={<Cases />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/client-stories" element={<Client />} />
           <Route path="/how-it-works" element={<How />} />
           <Route path="/talk-to-us" element={<Talk />} />
         </Routes>

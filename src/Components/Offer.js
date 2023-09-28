@@ -38,7 +38,7 @@ const Offer = ({ imageUrl, title, services }) => {
                 </ListItem>
               ))}
             </List>
-            <Link to={"/service"}>
+            <Link to={"/services"}>
               <button class="learn-more">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>

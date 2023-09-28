@@ -6,7 +6,7 @@ import { Box, List, ListItem, ListItemIcon } from "@mui/material";
 const HowItWorks = ({ imageUrl, title, services }) => {
   return (
     <Box className="main-header">
-      <h3 className="section-title" style={{textAlign: "left"}}>{title}</h3>
+      <h1 className="header-title" style={{textAlign: "left"}}>{title}</h1>
       <Grid container spacing={2}>
         {/* Left Column: List of Services */}
         <Grid item xs={12} sm={7}>
