@@ -42,7 +42,7 @@ function PortfolioView() {
     },
     {
       id: 3,
-      title: "Contadores Martínez Carreño y Asociados",
+      title: "CMCYA",
       description: "In this case study, we showcase our work for an accounting firm in Mexico City.",
       imageSrc: cmcyaImage,
       categories: ["web", "company"],
@@ -81,7 +81,7 @@ function PortfolioView() {
     },
     {
       id: 6,
-      title: "Rodamientos Calena S.A. de C.V.",
+      title: "Calena E-Commerce",
       description: "Creation of an e-commerce store for a bearings company in order to increase their sales.",
       imageSrc: calenaimage,
       categories: ["web", "e-commerce"],
@@ -134,6 +134,7 @@ function PortfolioView() {
             xs={12}
             sm={12}
             md={12}
+            lg={6}
             key={item.id}
             sx={{ justifyContent: "center", display: "flex" }}
           >

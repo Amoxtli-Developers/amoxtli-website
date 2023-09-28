@@ -2,11 +2,7 @@ import Card from "react-bootstrap/Card";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import React from "react";
 import "./PortfolioCards.css";
-
-const buttonStyle = {
-  border: "none",
-  transition: "background-color 0.3s, box-shadow 0.3s",
-};
+import { Link } from "react-router-dom";
 
 const arrowStyle = {
   transition: "transform 0.3s",
@@ -63,16 +59,19 @@ function PortfolioCard({
           </div>
           <Card.Title style={{ color: titleColor }}>{title}</Card.Title>
           <Card.Text style={{ color: textColor }}>{description}</Card.Text>
-          <button
-            style={{ buttonStyle, color: btnColor }}
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-          >
-            Learn more{" "}
-            <ArrowForwardIcon
-              style={{ ...arrowStyle, ...(isHovered && arrowHoverStyle) }}
-            />
-          </button>
+          <div className="learn-more-container">
+            <Link
+              className="learn-more"
+              style={{ color: btnColor }}
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
+            >
+              Learn more{" "}
+              <ArrowForwardIcon
+                style={{ ...arrowStyle, ...(isHovered && arrowHoverStyle) }}
+              />
+            </Link>
+          </div>
         </div>
         <div style={{ flex: 1 }}>
           <Card.Img
