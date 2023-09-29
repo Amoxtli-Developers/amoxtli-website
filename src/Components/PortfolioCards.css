@@ -80,4 +80,15 @@ p.card-text {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+  
+  .learn-more-container {
+    margin-top: 0;
+  }
+}
+
+/* Styles for mobile screens */
+@media only screen and (min-width: 768px) and (max-width: 1100px) and (orientation: landscape) {
+  .learn-more-container {
+    margin-top: 140px;
+  }
 }

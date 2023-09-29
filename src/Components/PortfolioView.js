@@ -81,7 +81,7 @@ function PortfolioView() {
     },
     {
       id: 6,
-      title: "Calena E-Commerce",
+      title: "Calena Bearings",
       description: "Creation of an e-commerce store for a bearings company in order to increase their sales.",
       imageSrc: calenaimage,
       categories: ["web", "e-commerce"],
