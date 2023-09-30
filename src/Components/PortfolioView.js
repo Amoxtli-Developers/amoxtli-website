@@ -9,6 +9,7 @@ import calenaimage from "../assets/projects/calena.jpg";
 import boomImage from "../assets/projects/boom.jpg";
 import spImage from "../assets/projects/sp.jpg";
 import cmcyaImage from "../assets/projects/cmcya.jpg";
+import cajsImage from "../assets/projects/cajs.jpg";
 
 function PortfolioView() {
   // Sample data for your portfolio cards (you can replace this with your actual data)
@@ -30,7 +31,8 @@ function PortfolioView() {
     {
       id: 2,
       title: "CyberBook App",
-      description: "Development of a mobile app for the Cybersecurity Hub at Tec de Monterrey.",
+      description:
+        "Development of a mobile app for the Cybersecurity Hub at Tec de Monterrey.",
       imageSrc: cyberImage,
       categories: ["mobile", "ios"],
       cardColor: "#002878",
@@ -43,7 +45,8 @@ function PortfolioView() {
     {
       id: 3,
       title: "CMCYA",
-      description: "In this case study, we showcase our work for an accounting firm in Mexico City.",
+      description:
+        "In this case study, we showcase our work for an accounting firm in Mexico City.",
       imageSrc: cmcyaImage,
       categories: ["web", "company"],
       cardColor: "white",
@@ -69,7 +72,8 @@ function PortfolioView() {
     {
       id: 5,
       title: "Salomon Photo",
-      description: "On this website portfolio, we showcase the work of an enthusiastic photographer.",
+      description:
+        "On this website portfolio, we showcase the work of an enthusiastic photographer.",
       imageSrc: spImage,
       categories: ["web", "portfolio"],
       cardColor: "white",
@@ -82,7 +86,8 @@ function PortfolioView() {
     {
       id: 6,
       title: "Calena Bearings",
-      description: "Creation of an e-commerce store for a bearings company in order to increase their sales.",
+      description:
+        "Creation of an e-commerce store for a bearings company in order to increase their sales.",
       imageSrc: calenaimage,
       categories: ["web", "e-commerce"],
       cardColor: "#fb6c3d",
@@ -94,8 +99,23 @@ function PortfolioView() {
     },
     {
       id: 7,
+      title: "Colegio Sucre",
+      description:
+        "Creation of a educational landing-page for a primary school in Mexico City.",
+      imageSrc: cajsImage,
+      categories: ["web", "education"],
+      cardColor: "white",
+      btnColor: "#015AA8",
+      titleColor: "#015AA8",
+      textColor: "#015AA8",
+      badgeColor: "#F8F8F8",
+      badgeTextColor: "#015AA8",
+    },
+    {
+      id: 8,
       title: "Boom Percussion",
-      description: "Development of a videogame and website player dashboard for a local percussion school in the US.",
+      description:
+        "Development of a videogame and website player dashboard for a local percussion school in the US.",
       imageSrc: boomImage,
       categories: ["web", "videogame"],
       cardColor: "#123740",

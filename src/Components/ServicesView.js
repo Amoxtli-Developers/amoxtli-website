@@ -45,7 +45,7 @@ function ServicesView() {
                 backgroundImage: `url(${startegyGif})`,
               }}
             />
-            <CardContent style={{padding: 20}}>
+            <CardContent style={{ padding: 20 }}>
               <h5 style={{ fontSize: "2.5rem", color: "#212529" }}>
                 Processing
               </h5>
@@ -81,7 +81,7 @@ function ServicesView() {
                 backgroundImage: `url(${designGif})`,
               }}
             />
-            <CardContent style={{padding: 20}}>
+            <CardContent style={{ padding: 20 }}>
               <h5 style={{ fontSize: "2.5rem", color: "#212529" }}>
                 Designing
               </h5>
@@ -116,7 +116,7 @@ function ServicesView() {
                 backgroundImage: `url(${codeGif})`,
               }}
             />
-            <CardContent style={{padding: 20}}>
+            <CardContent style={{ padding: 20 }}>
               <h5 style={{ fontSize: "2.5rem", color: "#212529" }}>
                 Developing
               </h5>
