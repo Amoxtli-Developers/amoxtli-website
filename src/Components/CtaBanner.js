@@ -32,7 +32,7 @@ const CustomCtaBanner = () => {
           <div>
             <Link
               target="_blank"
-              to={"https://calendly.com/amoxtlidev/entrevista_sitioweb"}
+              to={"https://calendly.com/amoxtlidev/tuayi"}
             >
               <button className="learn-more">
                 <span className="circle" aria-hidden="true">
