@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
+import "./CtaBanner.css";
 
 const CustomCtaBanner = () => {
   return (
@@ -24,13 +25,8 @@ const CustomCtaBanner = () => {
             and rise to your digital potential?
           </h2>
           <p style={{ marginBottom: "3rem" }} className="heading-text">
-            Embark on a transformative journey towards realizing your
-            <span className="underlined-text"> digital potential.</span> At
-            Amoxtli Web Developers, we understand the power of a strong online
-            presence. Whether you're a startup or an established business,{" "}
-            <span className="underlined-text">
-              we're here to help you thrive in the digital age.
-            </span>
+            book a 30-minute call to get feedback and a budget estimate from our
+            expert team
           </p>
 
           <div>
@@ -43,7 +39,7 @@ const CustomCtaBanner = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span style={{ marginLeft: "2.5rem" }} className="button-text">
-                  Schedule a call
+                  Book a call
                 </span>
               </button>
             </Link>

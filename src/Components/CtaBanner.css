@@ -1,6 +1,10 @@
 /* Regular font size for title */
 .cta-title {
-  font-size: 55px!important;
+  font-size: 40px;
+}
+
+.heading-text{
+  font-size: 20px;
 }
 
 /* Media query for screens with a minimum width of 600px */

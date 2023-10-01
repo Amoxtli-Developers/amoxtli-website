@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { Box } from "@mui/material";
+import "./Banner.css";
 
 const BannerLeft = ({ imageUrl, title, items }) => {
   return (
@@ -11,7 +12,7 @@ const BannerLeft = ({ imageUrl, title, items }) => {
           <img
             src={imageUrl}
             alt="header-logo"
-            style={{ width: "70%", borderRadius: "2rem" }}
+            style={{ width: "100%", borderRadius: "2rem" }}
           />
         </Grid>
         {/* Left Column: Text, Title, and Button */}
@@ -25,7 +26,7 @@ const BannerLeft = ({ imageUrl, title, items }) => {
             </h2>
           </div>
           <div>
-            <ul style={{ textAlign: "left", WebkitColumns: 2, columns: 2, fontSize: "25px"}}>
+            <ul style={{ textAlign: "left", fontSize: "25px"}}>
               {items.map((item, index) => (
                 <li key={index}>
                   <p>{item}</p>

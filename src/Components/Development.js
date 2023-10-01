@@ -60,8 +60,8 @@ const cardData = [
 function Development() {
   return (
     <Box className="section">
-      <h2 className="section-title" style={{ textAlign: "left" }}>
-        What we Offer
+      <h2 className="section-title" style={{ textAlign: "right" }}>
+        Our Development Services
       </h2>
       <Grid container spacing={5} style={{ marginTop: "2rem" }}>
         {cardData.map((card, index) => (

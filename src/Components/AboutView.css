@@ -1,0 +1,23 @@
+.etimology{
+    text-align: left;
+    color: rgb(168, 168, 168);
+    margin-bottom: 5rem;
+}
+
+.quote{
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.about-img{
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+}
+
+.believe{
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 5rem;
+}

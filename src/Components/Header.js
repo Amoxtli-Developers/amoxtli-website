@@ -14,7 +14,7 @@ const Header = ({ imageUrl, title }) => {
             <h1 className="header-title">{title}</h1>
             <p className="header-text">
               <span className="underlined-text">Amoxtli Web Developers</span> is
-              a dynamic organization founded by a group of Mexican students from
+              a software development startup founded by a group of Mexican students from
               Tec de Monterrey. Our primary goal is to empower startups by
               equipping them with vital technological assets, specifically
               modern websites, to thrive in the digital age. We understand the
