@@ -1,7 +1,10 @@
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "./TeamCarousel.css";
 
 // Import the CarouselCard component
 import TeamCarouselCard from "./TeamCarouselCard";
@@ -10,38 +13,56 @@ function TeamCarousel() {
   const cardDataArray = [
     {
       image: "image1.jpg",
-      title: "Card 1",
-      description: "This is a description for Card 1.",
-      badgeContent: 1,
+      title: "Salomón Martínez",
+      description: "Software Engineer by profession, photographer by passion.",
+      badgeContent: "CEO",
     },
     {
       image: "image2.jpg",
-      title: "Card 2",
-      description: "This is a description for Card 2.",
-      badgeContent: 2,
+      title: "Sofía Donlucas",
+      description: "Software Engineer by profession, dog lover by passion.",
+      badgeContent: "CTO",
     },
-    // Add more card data objects as needed
+    {
+      image: "image2.jpg",
+      title: "Arturo Alfaro",
+      description: "Software Engineer by profession, drummer by passion.",
+      badgeContent: "PM",
+    },
+    {
+      image: "image2.jpg",
+      title: "Isaac Jacinto",
+      description: "Software Engineer by profession, {complete} by passion.",
+      badgeContent: "Head of Design",
+    },
+    {
+      image: "image2.jpg",
+      title: "Rodrigo Aldahir",
+      description:
+        "Software Engineer by profession, basketball player by passion.",
+      badgeContent: "Head of Testing",
+    },
   ];
 
   return (
-    <OwlCarousel
-      className="owl-theme"
-      loop
-      margin={10}
-      items={3} // Display one testimonial at a time on larger screens
-      responsive={{
-        0: {
-          items: 1, // Display one testimonial at a time on smaller screens
-        },
-        768: {
-          items: 2, // Display two testimonials at a time on medium screens
-        },
-      }}
+    <Swiper
+      slidesPerView={3}
+      onSlideChange={() => console.log("slide change")}
+      onSwiper={(swiper) => console.log(swiper)}
+      style={{ marginLeft: "1rem", marginRight: 0, marginBottom: "5rem" }}
     >
       {cardDataArray.map((cardData, index) => (
-        <TeamCarouselCard key={index} cardData={cardData} />
+        <SwiperSlide>
+          <TeamCarouselCard
+            key={index}
+            title={cardData.title}
+            image={cardData.image}
+            description={cardData.description}
+            badgeContent={cardData.badgeContent}
+          />
+        </SwiperSlide>
       ))}
-    </OwlCarousel>
+    </Swiper>
   );
 }
 

@@ -13,18 +13,22 @@ function AboutView() {
       <p className="etimology">amoxtli /ˈaːmoʃtɬi/ náhuatl: codex</p>
 
       <p className="quote">
-        our mission is to empower you with the essential tools to kickstart your {" "}
+        our mission is to empower you with the essential <br />
+        tools to kickstart your{" "}
         <span className="underlined-text">online journey.</span>
       </p>
 
       <img src={imagen} alt="about-header-img" className="about-img"></img>
 
       <p className="believe">
-       we believe  {" "}
-        <span className="underlined-text">online journey.</span>
+        we believe <span className="underlined-text">technology</span> is the
+        key <br />
+        to start evolving your business <br />
+        into the <span className="underlined-text">digital era.</span>
       </p>
       <h2 className="section-title">Meet the Team</h2>
       <TeamCarousel />
+      <h2 className="section-title">Our Values</h2>
     </Box>
   );
 }
