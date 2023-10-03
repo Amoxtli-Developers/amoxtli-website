@@ -1,0 +1,19 @@
+/* Adjust the number of slides displayed on different screen sizes */
+@media (max-width: 767px) {
+    .swiper-container {
+      width: 100%; /* Make it full-width on small screens */
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .swiper-container {
+      width: 80%; /* Adjust the width for medium-sized screens */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .swiper-container {
+      width: 60%; /* Adjust the width for larger screens */
+    }
+  }
+  

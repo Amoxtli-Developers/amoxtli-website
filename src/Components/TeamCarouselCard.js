@@ -18,7 +18,7 @@ const badgeStyle = {
 
 function TeamCarouselCard({ image, title, description, badgeContent }) {
   return (
-    <Card sx={{maxWidth: "60%", borderRadius: "1rem", marginBottom: "1rem"}}>
+    <Card sx={{maxWidth: "100%", borderRadius: "1rem", marginBottom: "1rem"}}>
       <div
         style={{
           display: "flex",

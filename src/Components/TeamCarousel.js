@@ -2,12 +2,14 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-import "swiper/css";
+import 'swiper/css';
+import 'swiper/css/pagination';
 import "./TeamCarousel.css";
 
 // Import the CarouselCard component
 import TeamCarouselCard from "./TeamCarouselCard";
+
+
 
 function TeamCarousel() {
   const cardDataArray = [
@@ -26,43 +28,66 @@ function TeamCarousel() {
     {
       image: "image2.jpg",
       title: "Arturo Alfaro",
-      description: "Software Engineer by profession, drummer by passion.",
+      description: "Software Engineer by profession, musician by passion.",
       badgeContent: "PM",
     },
     {
       image: "image2.jpg",
       title: "Isaac Jacinto",
-      description: "Software Engineer by profession, {complete} by passion.",
-      badgeContent: "Head of Design",
+      description:
+        "Software Engineer by profession, football player by passion.",
+      badgeContent: "Developer",
     },
     {
       image: "image2.jpg",
       title: "Rodrigo Aldahir",
       description:
         "Software Engineer by profession, basketball player by passion.",
-      badgeContent: "Head of Testing",
+      badgeContent: "Tester",
     },
   ];
 
   return (
-    <Swiper
-      slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-      style={{ marginLeft: "1rem", marginRight: 0, marginBottom: "5rem" }}
-    >
-      {cardDataArray.map((cardData, index) => (
-        <SwiperSlide>
-          <TeamCarouselCard
-            key={index}
-            title={cardData.title}
-            image={cardData.image}
-            description={cardData.description}
-            badgeContent={cardData.badgeContent}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div style={{ marginLeft: "1rem", marginRight: "0", marginBottom: "5rem" }}>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1070: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        className="mySwiper"
+      >
+        {cardDataArray.map((cardData, index) => (
+          <SwiperSlide style={{ justifyContent: "center", display: "flex" }}>
+            <TeamCarouselCard
+              key={index}
+              title={cardData.title}
+              image={cardData.image}
+              description={cardData.description}
+              badgeContent={cardData.badgeContent}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
 
