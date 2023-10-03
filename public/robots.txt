@@ -1,3 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+# Reference to the sitemap.xml file
+Sitemap: https://amoxtlidev.com/sitemap.xml

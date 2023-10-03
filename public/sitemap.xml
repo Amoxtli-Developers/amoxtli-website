@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://amoxtlidev.com/</loc>
+  </url>
+  <url>
+    <loc>https://amoxtlidev.com/about</loc>
+  </url>
+    <url>
+    <loc>https://amoxtlidev.com/how-it-works</loc>
+  </url>
+    <url>
+    <loc>https://amoxtlidev.com/client-stories</loc>
+  </url>
+    <url>
+    <loc>https://amoxtlidev.com/services</loc>
+  </url>
+    <url>
+    <loc>https://amoxtlidev.com/talk-to-us</loc>
+  </url>
+  <!-- Add more URL entries for your site's pages -->
+</urlset>
