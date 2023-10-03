@@ -15,6 +15,7 @@ import Technologies from "../Components/Technologies";
 import CustomCtaBanner from "../Components/CtaBanner";
 import React, { Suspense } from "react";
 
+
 const services = [
   {
     iconUrl: service1, // Replace with the actual URL
@@ -47,6 +48,7 @@ function Home() {
   return (
     <div>
       <Navbar />
+      
       <Header imageUrl={imagen} title="Who we are" />
       <BrandCarousel />
       <Offer imageUrl={imagen2} title="What we offer" services={services} />

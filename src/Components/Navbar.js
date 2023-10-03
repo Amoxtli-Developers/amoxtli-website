@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
 import "./NavbarStyles.css";
-
 class Navbar extends Component {
   state = { clicked: false };
   handleClick = () => {
@@ -34,7 +33,13 @@ class Navbar extends Component {
               </li>
             );
           })}
-          <Link className="talkToUs" to={"/talk-to-us"}>Talk to us</Link>
+          <Link
+            className="talkToUs"
+            target="_blank"
+            to={"https://calendly.com/amoxtlidev/tuayi"}
+          >
+            Talk to us
+          </Link>
         </ul>
       </nav>
     );

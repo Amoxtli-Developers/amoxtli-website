@@ -84,8 +84,8 @@ function Development() {
               <CardMedia
                 style={{
                   ...cardMediaStyles,
-                  backgroundImage: `url(${card.image})`,
                 }}
+                image={card.image}
               />
               <CardContent style={{ padding: 20 }}>
                 <h5 style={{ fontSize: "2.5rem", color: "#212529" }}>

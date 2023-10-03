@@ -44,11 +44,11 @@ const Header = ({ imageUrl, title }) => {
             </p>
 
             <Link to={"/services"}>
-              <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                  <span class="icon arrow"></span>
+              <button className="learn-more">
+                <span className="circle" aria-hidden="true">
+                  <span className="icon arrow"></span>
                 </span>
-                <span class="button-text">Take a look</span>
+                <span className="button-text">Take a look</span>
               </button>
             </Link>
           </div>
