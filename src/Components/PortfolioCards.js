@@ -78,6 +78,7 @@ function PortfolioCard({
             className="card-image-container"
             variant="top"
             src={imageSrc}
+            alt="project-img"
           />
         </div>
       </Card.Body>

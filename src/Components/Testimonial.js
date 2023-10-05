@@ -56,6 +56,7 @@ const Testimonial = () => {
             <CardMedia
               component="img"
               image={testimonial.imageUrl}
+              alt="testimonial-img"
               sx={{borderRadius: "50%", width: "100px", height: "100px", maxWidth: "100px", maxHeight: "100px", margin: "0 auto"}}
             />
             <CardContent>
