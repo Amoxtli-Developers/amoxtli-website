@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
-import imagen from "../assets/pexels-christina-morillo-1181467.jpg";
+import imagen from "../assets/how.jpg";
 
 const badgeStyle = {
     backgroundColor: "#ff99c8", // Set your personalized background color here

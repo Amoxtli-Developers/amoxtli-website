@@ -32,7 +32,7 @@ const Header = ({ imageUrl, title }) => {
               With our expertise and commitment, we aim to be the driving force
               behind the digital transformation of emerging businesses.
             </p>
-            <Link to={"https://calendly.com/amoxtlidev/tuayi"} target="_blank">
+            <Link to={"/talk-to-us"} target="_blank">
               <button class="learn-more">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>

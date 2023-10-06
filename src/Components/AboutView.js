@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutView.css";
 import Box from "@mui/material/Box";
-import imagen from "../assets/pexels-christina-morillo-1181467.jpg";
+import imagen from "../assets/how.jpg";
 import TeamCarousel from "./TeamCarousel";
 import { Grid } from "@mui/material";
 import ValuesCard from "./ValuesCard";

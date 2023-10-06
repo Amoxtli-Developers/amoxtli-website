@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import imagen2 from "../assets/pexels-junior-teixeira-2047905.jpg";
+import howImg from "../assets/home.jpg";
 import service1 from "../assets/how-it-works/development.png";
 import service2 from "../assets/how-it-works/team.png";
 import service3 from "../assets/how-it-works/business.png";
@@ -11,7 +11,7 @@ import Process from "../Components/Process";
 import CustomCtaBanner from "../Components/CtaBanner";
 import PricingCard from "../Components/PricingCard";
 import Title from "../Components/Title";
-import imagen from "../assets/pexels-christina-morillo-1181467.jpg";
+import imagen from "../assets/how2.jpg";
 import Personalized from "../Components/Personalized";
 
 const services = [
@@ -44,7 +44,7 @@ function How() {
     <>
       <Navbar />
       <HowItWorks
-        imageUrl={imagen2}
+        imageUrl={howImg}
         title={"How it Works"}
         services={services}
       />

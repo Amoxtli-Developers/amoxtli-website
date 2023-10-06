@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+import TalkToUsForm from "../Components/TalkToUsForm";
 
 function Talk() {
   return (
     <>
-      <Navbar />
+      <TalkToUsForm />
     </>
   );
 }

@@ -36,7 +36,7 @@ const HowItWorks = ({ imageUrl, title, services }) => {
           <img
             src={imageUrl}
             alt="HowItWorks-logo"
-            style={{ width: "65%", borderRadius: "2rem" }}
+            style={{ maxWidth: "85%", borderRadius: "2rem" }}
           />
         </Grid>
       </Grid>
