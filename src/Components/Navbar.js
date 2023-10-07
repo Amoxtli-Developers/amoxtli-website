@@ -36,7 +36,7 @@ class Navbar extends Component {
           <Link
             className="talkToUs"
             target="_blank"
-            to={"https://calendly.com/amoxtlidev/tuayi"}
+            to={"/talk-to-us"}
           >
             Talk to us
           </Link>
