@@ -27,3 +27,11 @@
     text-align: left;
     margin-bottom: 5rem;
 }
+
+.title-edited{
+    padding-top:80px;
+  
+    @media (max-width: 768px) {
+        padding-top:5px;
+    }
+  }

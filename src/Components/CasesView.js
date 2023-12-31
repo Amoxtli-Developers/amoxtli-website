@@ -922,7 +922,7 @@ function CasesView() {
 
   return (
     <Box className="main-header">
-        <Grid container spacing={2}>
+        <Grid container spacing={2} className="grid-edited">
             <Grid item xs={12} sm={9} md={9}>
                 <h1 className="header-title" style={{ textAlign: "left" }}>
                     {title || 'Default Title'} {}

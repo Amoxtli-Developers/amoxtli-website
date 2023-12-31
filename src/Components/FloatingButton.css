@@ -1,0 +1,52 @@
+.floating-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 80px; /* Size of the button */
+    height: 80px; /* Size of the button */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex; /* Added to center the GIF */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #fa206f;
+  }
+  
+  .floating-button:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); /* Add box-shadow on hover */
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.05);
+  }
+  
+  .button-gif {
+    width: 70px; /* Smaller width */
+    height: 70px; /* Smaller height */
+    object-fit: cover;
+  }
+  
+  .button-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  
+  .notification-badge {
+      position: absolute;
+      top: -5px; /* Adjust as needed */
+      right: -5px; /* Adjust as needed */
+      background-color: #ff0000; /* Notification color */
+      color: white;
+      padding: 5px;
+      border-radius: 50%;
+      font-size: 12px; /* Adjust as needed */
+      transform: translate(25%, -25%); /* Adjust position */
+      z-index: 2; /* Ensure it's above other elements */
+    }

@@ -12,6 +12,7 @@ import cmcyaImage from "../assets/projects/cmcya.jpg";
 import cajsImage from "../assets/projects/cajs.jpg";
 import asesoristaImage from "../assets/projects/asesorista.png";
 import pysImage from "../assets/projects/pys.png";
+import "./AboutView.css";
 
 function PortfolioView() {
   // Sample data for your portfolio cards (you can replace this with your actual data)
@@ -160,7 +161,7 @@ function PortfolioView() {
 
   return (
     <Box className="main-header">
-      <h1 className="header-title" style={{ textAlign: "left" }}>
+      <h1 className="header-title title-edited" style={{ textAlign: "left" }}>
         Clients Stories
       </h1>
       <p className="header-text">

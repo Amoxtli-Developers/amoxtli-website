@@ -1,4 +1,5 @@
 import Preloader from '../Components/Preloader';
+import FloatingButton from '../Components/FloatingButton';
 import React, { useEffect, useState} from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from "../Components/Navbar";
@@ -26,6 +27,7 @@ function Cases() {
       {isLoading && <Preloader />}
       <CasesView />
       <CustomCtaBanner />
+      <FloatingButton />
       <Footer />
     </>
   );

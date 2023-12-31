@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from "../Components/Navbar";
 import PortfolioView from "../Components/PortfolioView";
 import Footer from "../Components/Footer";
+import FloatingButton from '../Components/FloatingButton';
 
 function Client() {
   const [isLoading, setIsLoading] = useState(false);
@@ -24,6 +25,7 @@ function Client() {
       <Navbar />
       {isLoading && <Preloader />}
       <PortfolioView />
+      <FloatingButton />
       <Footer />
       
     </>

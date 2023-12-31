@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import ServicesView from "../Components/ServicesView";
-
+import FloatingButton from '../Components/FloatingButton';
 import CustomCtaBanner from "../Components/CtaBanner";
 import Development from "../Components/Development";
 
@@ -29,6 +29,7 @@ function Service() {
       <ServicesView />
       <Development />
       <CustomCtaBanner />
+      <FloatingButton />
       <Footer />
     </>
   );

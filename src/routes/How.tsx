@@ -15,6 +15,7 @@ import PricingCard from "../Components/PricingCard";
 import Title from "../Components/Title";
 import imagen from "../assets/how2.jpg";
 import Personalized from "../Components/Personalized";
+import FloatingButton from '../Components/FloatingButton';
 
 const services = [
   {
@@ -73,6 +74,7 @@ function How() {
       </div>
       <Personalized imageUrl={imagen} title={"Personalized follow-up"} />
       <CustomCtaBanner />
+      <FloatingButton />
       <Footer />
     </>
   );

@@ -16,6 +16,7 @@ import CustomCtaBanner from "../Components/CtaBanner";
 import Preloader from '../Components/Preloader';
 import React, { useEffect, useState, Suspense} from 'react';
 import { useLocation } from 'react-router-dom';
+import FloatingButton from '../Components/FloatingButton';
 
 const services = [
   {
@@ -71,6 +72,7 @@ function Home() {
       </Suspense>
       <Technologies />
       <CustomCtaBanner />
+      <FloatingButton />
       <Footer />
     </div>
   );

@@ -42,3 +42,11 @@ cite {
     font-weight: 700;
     color: #fa206f;
 }
+
+.grid-edited{
+    padding-top:80px;
+  
+    @media (max-width: 768px) {
+        padding-top:5px;
+    }
+  }

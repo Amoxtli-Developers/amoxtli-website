@@ -2,11 +2,12 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import "./HowItWorks.css";
 import { Box, List, ListItem, ListItemIcon } from "@mui/material";
+import "./AboutView.css";
 
 const HowItWorks = ({ imageUrl, title, services }) => {
   return (
     <Box className="main-header">
-      <h1 className="header-title" style={{textAlign: "left"}}>{title}</h1>
+      <h1 className="header-title title-edited" style={{textAlign: "left"}}>{title}</h1>
       <Grid container spacing={2}>
         {/* Left Column: List of Services */}
         <Grid item xs={12} sm={7}>

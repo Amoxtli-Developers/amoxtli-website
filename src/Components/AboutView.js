@@ -33,7 +33,7 @@ function AboutView() {
   ];
   return (
     <Box className="main-header">
-      <h1 className="header-title" style={{ textAlign: "left" }}>
+      <h1 className="header-title title-edited" style={{ textAlign: "left"}}>
         We are <span className="underlined-text">Amoxtli Web Developers</span>
       </h1>
       <p className="etimology">amoxtli /ˈaːmoʃtɬi/ náhuatl: codex</p>

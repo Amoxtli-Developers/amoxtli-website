@@ -5,6 +5,7 @@ import "./Header.css";
 import { Box } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import "./AboutView.css";
 
 const Header = ({ imageUrl, title }) => {
   return (
@@ -13,7 +14,7 @@ const Header = ({ imageUrl, title }) => {
         {/* Left Column: Text, Title, and Button */}
         <Grid item xs={12} sm={6}>
           <div>
-            <h1 className="header-title" style={{ textAlign: "left" }}>{title}</h1>
+            <h1 className="header-title title-edited" style={{ textAlign: "left" }}>{title}</h1>
             <p className="header-text">
               <span className="underlined-text">Amoxtli Web Developers</span> is
               a software development startup founded by a group of Mexican students from

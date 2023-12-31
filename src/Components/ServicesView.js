@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-
+import "./AboutView.css";
 import startegyGif from "../assets/services/strategy.gif";
 import designGif from "../assets/services/design.gif";
 import codeGif from "../assets/services/code.gif";
@@ -18,7 +18,7 @@ const cardMediaStyles = {
 function ServicesView() {
   return (
     <Box className="main-header">
-      <h1 className="header-title" style={{ textAlign: "left" }}>
+      <h1 className="header-title title-edited" style={{ textAlign: "left" }}>
         What we Offer
       </h1>
       <Grid container spacing={5} style={{ marginTop: "2rem" }}>
