@@ -9,4 +9,20 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-  }
+}
+
+.preloader-image {
+    max-width: 15%;
+}
+
+@media (max-width: 480px) {
+    .preloader-image {
+      max-width: 60%; /* Aumentar el porcentaje para hacerla más grande en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .preloader-image {
+        max-width: 40%; /* Aumentar el porcentaje para hacerla más grande en pantallas pequeñas */
+    }
+}

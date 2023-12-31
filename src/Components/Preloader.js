@@ -4,7 +4,7 @@ import "./Preloader.css";
 const Preloader = () => {
   return (
     <div className="preloader-container">
-      <img src={preloaderGif} alt="Loading..." style={{maxWidth: "15%"}}/>
+      <img src={preloaderGif} alt="Loading..." className="preloader-image"/>
     </div>
   );
 };
