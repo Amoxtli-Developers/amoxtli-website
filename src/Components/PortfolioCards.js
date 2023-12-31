@@ -13,6 +13,7 @@ const arrowHoverStyle = {
 };
 
 function PortfolioCard({
+  id,
   title,
   description,
   imageSrc,
@@ -61,6 +62,7 @@ function PortfolioCard({
           <Card.Text style={{ color: textColor }}>{description}</Card.Text>
           <div className="learn-more-container">
             <Link
+              to={`/client-case/${id}`}
               className="learn-more"
               style={{ color: btnColor }}
               onMouseEnter={() => setHovered(true)}

@@ -31,33 +31,6 @@
 
 /* Technologies.css */
 
-/* Style for the selected tab */
-.custom-tabs .nav-link.active {
-  border-bottom: 15px solid #fa206f; /* Add a bottom border to create the underline effect */
-  color: #fa206f; /* Change the text color */
-}
-
-/* Style for the tab content */
-.custom-tabs .tab-content {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-/* Add custom animation to the selected tab content (if desired) */
-.custom-tabs .tab-content.fade.in {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* Style for the technology logos */
 .technology-logos {
   display: flex;
@@ -71,8 +44,35 @@
   height: auto;
 }
 
-
-
 .technology-title{
     font-weight: 300;
+}
+
+/* Style for the selected tab */
+
+.custom-tabs .nav-link {
+  border-radius: 0.5rem;
+}
+
+.custom-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  transform: translateX(-50%); 
+  width: 100%;
+  height: 15px;
+  background: #fa206f;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.custom-tabs .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; 
+  height: 15px;
+  background: #e7e9eb; 
+  border-radius: 10px 10px 10px 10px;
 }

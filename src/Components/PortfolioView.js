@@ -10,6 +10,8 @@ import boomImage from "../assets/projects/boom.jpg";
 import spImage from "../assets/projects/sp.jpg";
 import cmcyaImage from "../assets/projects/cmcya.jpg";
 import cajsImage from "../assets/projects/cajs.jpg";
+import asesoristaImage from "../assets/projects/asesorista.png";
+import pysImage from "../assets/projects/pys.png";
 
 function PortfolioView() {
   // Sample data for your portfolio cards (you can replace this with your actual data)
@@ -125,7 +127,34 @@ function PortfolioView() {
       badgeColor: "rgba(255, 255, 255, 0.8)",
       badgeTextColor: "#123740",
     },
-
+    {
+      id: 9,
+      title: "Asesorista",
+      description:
+        "Website centralized in real estate advice and property management through a catalog.",
+      imageSrc: asesoristaImage,
+      categories: ["web", "company"],
+      cardColor: "white",
+      btnColor: "#eb6753",
+      titleColor: "#eb6753",
+      textColor: "#eb6753",
+      badgeColor: "#F8F8F8",
+      badgeTextColor: "#eb6753",
+    },
+    {
+      id: 10,
+      title: "Psique & Ser",
+      description:
+        "Website of an association dedicated to providing mental health services in person and virtually.",
+      imageSrc: pysImage,
+      categories: ["web", "mental health"],
+      cardColor: "#a5bc80",
+      btnColor: "white",
+      titleColor: "white",
+      textColor: "white",
+      badgeColor: "rgba(255, 255, 255, 0.8)",
+      badgeTextColor: "#a5bc80",
+    },
     // Add more portfolio items as needed
   ];
 
@@ -159,6 +188,7 @@ function PortfolioView() {
             sx={{ justifyContent: "center", display: "flex" }}
           >
             <PortfolioCards
+              id={item.id}
               title={item.title}
               description={item.description}
               imageSrc={item.imageSrc}

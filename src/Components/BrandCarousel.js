@@ -27,7 +27,6 @@ const BrandCarousel = () => {
 
   return (
     <Box className="section">
-      <h3 className="section-title">Our clients</h3>
       <OwlCarousel
         className="owl-theme"
         loop
@@ -40,6 +39,7 @@ const BrandCarousel = () => {
           200: { items: 1 },
           900: { items: 5 },
         }}
+        style={{paddingBottom:"30px"}}
       >
         {imageUrls.map((imageUrl, index) => (
           <div className="item" key={index}>

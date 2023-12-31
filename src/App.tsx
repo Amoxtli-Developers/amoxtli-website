@@ -5,6 +5,7 @@ import About from "./routes/About";
 import Service from "./routes/Service";
 import How from "./routes/How";
 import Client from "./routes/Client";
+import Cases from "./routes/Cases";
 import Talk from "./routes/Talk";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Service />} />
           <Route path="/client-stories" element={<Client />} />
+          <Route path="/client-case/:id" element={<Cases />} />
           <Route path="/how-it-works" element={<How />} />
           <Route path="/talk-to-us" element={<Talk />} />
         </Routes>

@@ -1,0 +1,44 @@
+.date-case{
+    text-align: right;
+    color: rgb(168, 168, 168);
+    padding-top: 30px;
+}
+
+/* Media query for extra small screens (xs) */
+@media only screen and (max-width: 600px) {
+    .date-case {
+        padding-bottom: 0px;
+    }
+}
+
+/* Media query for medium screens (md) */
+@media only screen and (min-width: 768px) {
+    .date-case {
+        padding-bottom: 30px;
+    }
+}
+
+blockquote {
+	font-size: 30px;;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+    align-items: center;
+	justify-content: center;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: black;
+	font-size: 6rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+cite {
+	line-height: 3;
+	text-align: left;
+    font-weight: 700;
+    color: #fa206f;
+}
