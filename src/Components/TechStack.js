@@ -4,7 +4,7 @@ import "./CasesView.css";
 
 function TechStack({ logo, name}) {
   return (
-    <Grid item xs={1} sm={1} md={1} lg={1}>
+    <Grid item xs={1} sm={1} md={1} lg={1} style={{justifyContent:"center", display:"flex"}}>
       <div className="technology-logos-container">
           <img src={logo} alt="Logo" />
           <p className="technology-title">{name}</p>

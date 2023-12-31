@@ -935,11 +935,11 @@ function CasesView() {
         <Grid container spacing={2} sx={{ marginBottom: "5rem" }}>
             <Grid item xs={12} sm={12} md={12} sx={{justifyContent: "center", display: "flex"}}>
                 <Card sx={{ borderRadius: "2rem", backgroundColor: "rgb(247, 247, 247)", width: "100%" }}>
-                    <CardContent sx={{ margin: "2rem", textAlign: "left" }}>
+                    <CardContent sx={{textAlign: "left" }} className="card-edited">
                         <CardMedia
                             component="img"
                             image={image}
-                            style={{ borderRadius: "1%" }}
+                            style={{ borderRadius: "1rem" }}
                         />
                     </CardContent>
                 </Card>

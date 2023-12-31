@@ -67,7 +67,11 @@
   }
 
   @media (max-width: 576px) {
-    margin: 5rem 2rem 2rem 2rem; /* Reduced margin for screens up to 576px wide */
+    margin: 9rem 2rem 2rem 2rem; /* Reduced margin for screens up to 576px wide */
+  }
+
+  @media (max-width: 480px) {
+    margin: 9rem 1rem 1rem 1rem; /* Another reduced margin for screens up to 480px wide */
   }
 }
 
