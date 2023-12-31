@@ -13,8 +13,9 @@ import Offer from "../Components/Offer";
 import Testimonial from "../Components/Testimonial";
 import Technologies from "../Components/Technologies";
 import CustomCtaBanner from "../Components/CtaBanner";
-import React, { Suspense } from "react";
-
+import Preloader from '../Components/Preloader';
+import React, { useEffect, useState, Suspense} from 'react';
+import { useLocation } from 'react-router-dom';
 
 const services = [
   {
@@ -45,10 +46,23 @@ const services = [
 ];
 
 function Home() {
+  const [isLoading, setIsLoading] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Set loading to true when the location changes
+    setIsLoading(true);
+
+    // Simulate an async loading process like an API call
+    const timer = setTimeout(() => setIsLoading(false), 1500); // Adjust time as needed
+
+    // Cleanup the timer when the component unmounts
+    return () => clearTimeout(timer);
+  }, [location]);
   return (
     <div>
       <Navbar />
-      
+      {isLoading && <Preloader />}
       <Header imageUrl={imagen} title="Who we are" />
       <BrandCarousel />
       <Offer imageUrl={imagen2} title="What we offer" services={services} />

@@ -23,7 +23,7 @@ const Header = ({ imageUrl, title }) => {
               </span>. They are passionate about helping startups make the most of
               this opportunity.
             </p>
-            <div style={{ textAlign: "left", paddingBottom:"40px"}}>
+            <div style={{ textAlign: "right", paddingBottom:"40px"}}>
               <Link to={"/talk-to-us"} target="_blank">
                 <button class="learn-more">
                   <span class="circle" aria-hidden="true">

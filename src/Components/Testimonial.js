@@ -23,8 +23,23 @@ const testimonials = [
     imageUrl: test2,
   },
   {
-    title: "Testimonial 3",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in lectus eu sem vehicula consequat.",
+    title: "Carlos Ramírez",
+    text: "Amoxtli took our website to the next level. Their service and attention to detail are unmatched. Thank you for an outstanding experience!",
+    imageUrl: test2,
+  },
+  {
+    title: "Ana María Sánchez",
+    text: "Thanks to Amoxtli, our online presence is stronger than ever. Their SEO strategy was exactly what we needed.",
+    imageUrl: test1,
+  },
+  {
+    title: "Eduardo López",
+    text: "The team at Amoxtli delivered our mobile app on time and with exceptional quality. They are true professionals in development.",
+    imageUrl: test2,
+  },
+  {
+    title: "Luisa Fernández",
+    text: "Amoxtli's redesign of my online store has been a resounding success. Their focus on UX/UI made a real difference for my customers.",
     imageUrl: test1,
   },
   // Add more testimonials here
