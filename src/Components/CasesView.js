@@ -850,7 +850,7 @@ function CasesView() {
                   </p></blockquote>
             ),
             citation: (
-              <cite> <p style={{textAlign:"right", paddingRight:"20px"}}>Sucre</p></cite>
+              <cite> <p style={{textAlign:"right", paddingRight:"20px"}}>Boom Percussion</p></cite>
             ),
             href: "/client-stories",
           },
@@ -910,7 +910,7 @@ function CasesView() {
                   </p></blockquote>
             ),
             citation: (
-              <cite> <p style={{textAlign:"right", paddingRight:"20px"}}>Sucre</p></cite>
+              <cite> <p style={{textAlign:"right", paddingRight:"20px"}}>Psique & Ser</p></cite>
             ),
             href: "https://psiqueyser.org/",
           },
