@@ -1,0 +1,73 @@
+/* ChatModal.css */
+
+.chat-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .chat-modal-content {
+    background-color: #282c34;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .chat-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .chat-modal-body {
+    padding: 2px 16px;
+  }
+  
+  .chat-modal-footer {
+    padding: 10px 16px;
+    text-align: center;
+  }
+  
+  .chat-modal-footer input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .chat-modal-options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  /* Add more styling for the option buttons as needed */
+  

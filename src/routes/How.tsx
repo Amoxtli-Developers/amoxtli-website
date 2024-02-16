@@ -16,6 +16,7 @@ import Title from "../Components/Title";
 import imagen from "../assets/how2.jpg";
 import Personalized from "../Components/Personalized";
 import FloatingButton from '../Components/FloatingButton';
+import ChatModal from '../Components/ChatModal';
 
 const services = [
   {
@@ -46,6 +47,16 @@ function How() {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   useEffect(() => {
     // Set loading to true when the location changes
     setIsLoading(true);
@@ -74,7 +85,9 @@ function How() {
       </div>
       <Personalized imageUrl={imagen} title={"Personalized follow-up"} />
       <CustomCtaBanner />
-      <FloatingButton />
+      <FloatingButton onClick={handleOpenModal} />
+      <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />
+
       <Footer />
     </>
   );

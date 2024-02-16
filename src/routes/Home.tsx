@@ -17,6 +17,7 @@ import Preloader from '../Components/Preloader';
 import React, { useEffect, useState, Suspense} from 'react';
 import { useLocation } from 'react-router-dom';
 import FloatingButton from '../Components/FloatingButton';
+import ChatModal from '../Components/ChatModal';
 
 const services = [
   {
@@ -50,6 +51,16 @@ function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   useEffect(() => {
     // Set loading to true when the location changes
     setIsLoading(true);
@@ -72,7 +83,8 @@ function Home() {
       </Suspense>
       <Technologies />
       <CustomCtaBanner />
-      <FloatingButton />
+      <FloatingButton onClick={handleOpenModal} />
+      <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />
       <Footer />
     </div>
   );

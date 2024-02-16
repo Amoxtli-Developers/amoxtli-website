@@ -6,10 +6,21 @@ import Navbar from "../Components/Navbar";
 import AboutView from "../Components/AboutView";
 import Footer from "../Components/Footer";
 import CustomCtaBanner from "../Components/CtaBanner";
+import ChatModal from '../Components/ChatModal';
 
 function About() {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     // Set loading to true when the location changes
@@ -27,7 +38,9 @@ function About() {
       {isLoading && <Preloader />}
       <AboutView />
       <CustomCtaBanner />
-      <FloatingButton />
+      <FloatingButton onClick={handleOpenModal} />
+      <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />
+
       <Footer />
     </>
   );

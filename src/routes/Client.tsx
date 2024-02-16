@@ -5,10 +5,20 @@ import Navbar from "../Components/Navbar";
 import PortfolioView from "../Components/PortfolioView";
 import Footer from "../Components/Footer";
 import FloatingButton from '../Components/FloatingButton';
+import ChatModal from '../Components/ChatModal';
 
 function Client() {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     // Set loading to true when the location changes
@@ -25,7 +35,9 @@ function Client() {
       <Navbar />
       {isLoading && <Preloader />}
       <PortfolioView />
-      <FloatingButton />
+      <FloatingButton onClick={handleOpenModal} />
+      <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />
+
       <Footer />
       
     </>

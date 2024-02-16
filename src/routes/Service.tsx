@@ -7,10 +7,20 @@ import ServicesView from "../Components/ServicesView";
 import FloatingButton from '../Components/FloatingButton';
 import CustomCtaBanner from "../Components/CtaBanner";
 import Development from "../Components/Development";
+import ChatModal from '../Components/ChatModal';
 
 function Service() {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     // Set loading to true when the location changes
@@ -29,7 +39,9 @@ function Service() {
       <ServicesView />
       <Development />
       <CustomCtaBanner />
-      <FloatingButton />
+      <FloatingButton onClick={handleOpenModal} />
+      <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />
+
       <Footer />
     </>
   );
