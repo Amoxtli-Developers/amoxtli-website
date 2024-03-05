@@ -20,9 +20,9 @@ export default function PricingCard({ box_type_text }) {
             <b className="dollar">$</b>
 
             {box_type_text === "One Page"
-              ? "2,500"
+              ? "3,000"
               : box_type_text === "Landing Page"
-              ? "6,000"
+              ? "6,500"
               : "9,500"}
 
             <span>/MXN</span>
