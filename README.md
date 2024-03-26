@@ -1,47 +1,40 @@
-# Getting Started with Create React App
+# Amoxtli Web Developers - Crafting Digital Success
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+"Amoxtli Web Developers" is dedicated to empowering startups with cutting-edge web solutions. Led by Salomón Martínez, our team specializes in creating dynamic, responsive websites that drive digital success. We leverage the latest technologies to deliver custom solutions tailored to the unique needs of each startup.
 
-In the project directory, you can run:
+## Technology Stack
 
-### `npm start`
+Our projects harness the power of several key technologies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React**: A JavaScript library for building user interfaces with efficient, dynamic components.
+- **Material-UI (MUI)**: A popular React UI framework for implementing Google's Material Design, enhancing UI/UX with ready-to-use components.
+- **HTML**: The standard markup language for documents designed to be displayed in a web browser.
+- **CSS**: Used for describing the presentation of a document written in HTML, CSS brings styles to life, including layouts, colors, and fonts.
+- **JavaScript (JS)**: An essential programming language for web development, enabling interactive web pages and functional features.
+- **Netlify**: A cloud service provider that offers hosting and serverless backend services for static websites, ensuring fast loading times and a secure browsing experience.
+- **Hostinger Domains**: Our choice for domain registration, providing reliable service and support for our web presence.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **SEO Optimization**: Through careful research and strategic implementation of meta tags, descriptions, and keywords, we ensure our projects rank high on search engines.
+- **Responsive Design**: Our sites are built to look great on any device, providing a seamless experience for users on desktops, tablets, and smartphones.
+- **Analytics Integration**: Utilizing Google Analytics for insightful data on website traffic and user behavior, enabling data-driven decisions to enhance performance.
+- **Social Media Engagement**: With Open Graph and Twitter Card integration, our projects are primed for sharing on social media platforms, increasing visibility and engagement.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How We Work
 
-### `npm run build`
+1. **Discovery**: Understanding your startup's mission, vision, and goals.
+2. **Design**: Crafting a visually appealing design that aligns with your brand identity.
+3. **Development**: Building the site with clean, efficient code and integrating necessary functionalities.
+4. **Deployment**: Launching the site on Netlify, with domain management through Hostinger.
+5. **Optimization**: Continuous improvement based on analytics insights and user feedback.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contact Us
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ready to take your startup to the next level with a professional web presence? Visit our [website](https://www.amoxtli.tech) or reach out to Salomón Martínez for a consultation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# amoxtli-website
+All content and code on the website are the property of "Amoxtli Web Developers" and are protected under copyright law. Unauthorized use or reproduction is strictly prohibited.
