@@ -1,11 +1,11 @@
 import React from "react";
 import "./AboutView.css";
 import Box from "@mui/material/Box";
-import imagen from "../assets/how.jpg";
 import TeamCarousel from "./TeamCarousel";
 import { Grid } from "@mui/material";
 import ValuesCard from "./ValuesCard";
-import axolotlGift from "../assets/axolotl.gif";
+import axolotlGift from "../assets/amoxtli-merch.jpg";
+import { ImageGrid } from "./ImageGrid/ImageGrid";
 
 function AboutView() {
   const values = [
@@ -33,7 +33,7 @@ function AboutView() {
   ];
   return (
     <Box className="main-header">
-      <h1 className="header-title title-edited" style={{ textAlign: "left"}}>
+      <h1 className="header-title title-edited" style={{ textAlign: "left" }}>
         We are <span className="underlined-text">Amoxtli Web Developers</span>
       </h1>
       <p className="etimology">amoxtli /ˈaːmoʃtɬi/ náhuatl: codex</p>
@@ -64,11 +64,12 @@ function AboutView() {
               paragraph={value.paragraph}
               bgColor={value.bgColor}
               textColor={value.textColor}
+              titleColor={"white"}
             />
           </Grid>
         ))}
       </Grid>
-      <img src={imagen} alt="about-header-img" className="about-img"></img>
+      <ImageGrid />
       <p className="dream">
         our dream is to make sure that <br />
         <span className="underlined-text">good ideas</span> are not lost and{" "}
@@ -76,21 +77,37 @@ function AboutView() {
         become a <span className="underlined-text">reality.</span>
       </p>
       <Grid container spacing={2} sx={{ marginBottom: "5rem" }}>
-        <Grid item xs={12} sm={6} md={6} sx={{justifyContent: "center", display: "flex"}}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          sx={{ justifyContent: "center", display: "flex" }}
+        >
           <ValuesCard
             title={"Ensuring Success"}
-            paragraph={"full control when outsourcing development of your saas product"}
+            paragraph={
+              "full control when outsourcing development of your saas product"
+            }
             bgColor={"rgb(247, 247, 247)"}
             textColor={"black"}
+            titleColor={"#fa206f"}
             cardWidth={"70%"}
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={6} sx={{justifyContent: "center", display: "flex"}}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          sx={{ justifyContent: "center", display: "flex" }}
+        >
           <ValuesCard
             title={"Securing Ownership"}
             paragraph={"tamper-proof evidence of the ownership of all the work"}
             bgColor={"rgb(247, 247, 247)"}
             textColor={"black"}
+            titleColor={"#fa206f"}
             cardWidth={"70%"}
           />
         </Grid>

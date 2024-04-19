@@ -13,11 +13,17 @@ import Offer from "../Components/Offer";
 import Testimonial from "../Components/Testimonial";
 import Technologies from "../Components/Technologies";
 import CustomCtaBanner from "../Components/CtaBanner";
-import Preloader from '../Components/Preloader';
-import React, { useEffect, useState, Suspense} from 'react';
-import { useLocation } from 'react-router-dom';
-import FloatingButton from '../Components/FloatingButton';
-import ChatModal from '../Components/ChatModal';
+import Preloader from "../Components/Preloader";
+import React, { useEffect, useState, Suspense } from "react";
+import { useLocation } from "react-router-dom";
+import FloatingButton from "../Components/FloatingButton";
+import ChatModal from "../Components/ChatModal";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const services = [
   {
@@ -75,16 +81,58 @@ function Home() {
     <div>
       <Navbar />
       {isLoading && <Preloader />}
-      <Header imageUrl={imagen} title="Who we are" />
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+        viewport={{ once: true }}
+      >
+        <Header imageUrl={imagen} title="Who we are" />
+      </motion.div>
+
       <BrandCarousel />
-      <Offer imageUrl={imagen2} title="What we offer" services={services} />
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+        viewport={{ once: true }}
+      >
+        <Offer imageUrl={imagen2} title="What we offer" services={services} />
+      </motion.div>
+
       <Suspense fallback={<div>Loading...</div>}>
-        <Testimonial />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <Testimonial />
+        </motion.div>
       </Suspense>
-      <Technologies />
-      <CustomCtaBanner />
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+        viewport={{ once: true }}
+      >
+        <Technologies />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+        viewport={{ once: true }}
+      >
+        <CustomCtaBanner />
+      </motion.div>
+
       <FloatingButton onClick={handleOpenModal} />
       <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />
+
       <Footer />
     </div>
   );

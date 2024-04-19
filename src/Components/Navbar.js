@@ -12,7 +12,7 @@ class Navbar extends Component {
     return (
       <nav className="NavbarItems obj-width">
         <h1>
-          <Link className="navbar-logo" to={"/"}>
+          <Link className="navbar-logo" to={"/"} style={{fontWeight: "bold"}}>
             Amoxtli
           </Link>
         </h1>

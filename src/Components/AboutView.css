@@ -1,37 +1,38 @@
-.etimology{
-    text-align: left;
-    color: rgb(168, 168, 168);
-    margin-bottom: 5rem;
+.etimology {
+  text-align: left;
+  color: rgb(168, 168, 168);
+  margin-bottom: 5rem;
 }
 
-.quote{
-    font-size: 45px;
-    text-align: left;
-    margin-bottom: 5rem;
+.quote {
+  font-size: 45px;
+  text-align: left;
+  margin-bottom: 5rem;
 }
 
-.about-img{
-    width: 100%;
-    border-radius: 2rem;
-    margin-bottom: 5rem;
+.about-img {
+  width: 100%;
+  border-radius: 2rem;
+  margin-bottom: 5rem;
 }
 
-.believe{
-    font-size: 45px;
-    text-align: left;
-    margin-bottom: 5rem;
+.believe {
+  font-size: 45px;
+  text-align: left;
+  margin-bottom: 5rem;
 }
 
-.dream{
-    font-size: 45px;
-    text-align: left;
-    margin-bottom: 5rem;
+.dream {
+  font-size: 45px;
+  text-align: left;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
-.title-edited{
-    padding-top:80px;
-  
-    @media (max-width: 768px) {
-        padding-top:5px;
-    }
+.title-edited {
+  padding-top: 80px;
+
+  @media (max-width: 768px) {
+    padding-top: 5px;
   }
+}

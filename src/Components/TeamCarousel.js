@@ -8,6 +8,9 @@ import "./TeamCarousel.css";
 
 // Import the CarouselCard component
 import TeamCarouselCard from "./TeamCarouselCard";
+import july from "../assets/team/july.jpg"
+import alfa from "../assets/team/alfa.jpg"
+import roberto from "../assets/team/roberto.jpg"
 
 
 
@@ -26,17 +29,17 @@ function TeamCarousel() {
       badgeContent: "CTO",
     },
     {
-      image: "image2.jpg",
+      image: alfa,
       title: "Arturo Alfaro",
       description: "Software Engineer by profession, musician by passion.",
-      badgeContent: "PM",
+      badgeContent: "Back-end",
     },
     {
       image: "image2.jpg",
       title: "Isaac Jacinto",
       description:
         "Software Engineer by profession, football player by passion.",
-      badgeContent: "Developer",
+      badgeContent: "Database",
     },
     {
       image: "image2.jpg",
@@ -44,6 +47,20 @@ function TeamCarousel() {
       description:
         "Software Engineer by profession, basketball player by passion.",
       badgeContent: "Tester",
+    },
+    {
+      image: july,
+      title: "July Ceballos",
+      description:
+        "Software Engineer by profession, cat lover by passion.",
+      badgeContent: "Front-end",
+    },
+    {
+      image: roberto,
+      title: "Roberto Garduño",
+      description:
+        "Software Engineer by profession, cat lover by passion.",
+      badgeContent: "Back-end",
     },
   ];
 

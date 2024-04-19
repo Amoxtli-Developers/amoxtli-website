@@ -4,7 +4,6 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
-import imagen from "../assets/how.jpg";
 
 const badgeStyle = {
     backgroundColor: "#ff99c8", // Set your personalized background color here
@@ -31,7 +30,7 @@ function TeamCarouselCard({ image, title, description, badgeContent }) {
         </badge>
       </div>
       <CardMedia sx={{ justifyContent: "center", display: "flex" }}>
-        <Avatar alt={title} src={imagen} sx={{ width: 80, height: 80 }} />
+        <Avatar alt={title} src={image} sx={{ width: 80, height: 80 }} />
       </CardMedia>
       <CardContent>
         <Typography variant="h6" component="div">

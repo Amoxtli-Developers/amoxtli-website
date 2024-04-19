@@ -9,6 +9,7 @@ import Cases from "./routes/Cases";
 import Talk from "./routes/Talk";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import "./styles/tailwind.css";
 
 interface WrapperProps {
   children: ReactNode;
