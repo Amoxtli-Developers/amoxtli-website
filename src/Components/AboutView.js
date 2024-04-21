@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutView.css";
 import Box from "@mui/material/Box";
 import TeamCarousel from "./TeamCarousel";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import ValuesCard from "./ValuesCard";
 import axolotlGift from "../assets/amoxtli-merch.jpg";
 import { ImageGrid } from "./ImageGrid/ImageGrid";
@@ -33,10 +33,10 @@ function AboutView() {
   ];
   return (
     <Box className="main-header">
-      <h1 className="header-title title-edited" style={{ textAlign: "left", fontSize: "100px" }}>
+      <Typography className="header-title title-edited" sx={{ textAlign: "left", fontSize: {xs: "40px", md:"100px"} }}>
         We are <span className="underlined-text">Amoxtli Web Developers</span>
-      </h1>
-      <p className="etimology">amoxtli /ˈaːmoʃtɬi/ náhuatl: codex</p>
+      </Typography>
+      <Typography className="etimology" sx={{marginBottom: {xs: "2rem", md: "5rem"}}} >amoxtli /ˈaːmoʃtɬi/ náhuatl: codex</Typography>
 
       <p className="quote">
         our mission is to empower you with the essential <br />
