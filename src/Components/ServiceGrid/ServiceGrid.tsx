@@ -2,11 +2,10 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "../BentoGrid/BentoGrid";
 import { Box } from "@mui/system";
 import A1 from "../../assets/services/A1.gif";
-import A2 from "../../assets/services/A2.gif";
-import A3 from "../../assets/services/A3.gif";
+
 import A4 from "../../assets/services/A4.gif";
 import A5 from "../../assets/services/A5.gif";
-import A6 from "../../assets/services/A6.gif";
+
 
 export function ServiceGrid() {
   return (
