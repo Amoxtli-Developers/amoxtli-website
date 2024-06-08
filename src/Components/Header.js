@@ -3,8 +3,7 @@ import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { Box } from "@mui/material";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import ValuesCard from "./ValuesCard";
 import "./AboutView.css";
 
 const Header = ({ imageUrl, title }) => {
@@ -14,17 +13,24 @@ const Header = ({ imageUrl, title }) => {
         {/* Left Column: Text, Title, and Button */}
         <Grid item xs={12} sm={6}>
           <div>
-            <h1 className="header-title title-edited" style={{ textAlign: "left" }}>{title}</h1>
+            <h1
+              className="header-title title-edited"
+              style={{ textAlign: "left" }}
+            >
+              {title}
+            </h1>
             <p className="header-text">
               <span className="underlined-text">Amoxtli Web Developers</span> is
-              a software development startup founded by a group of Mexican students from
-              Tec de Monterrey that understand the
-              critical role that a strong <span className="underlined-text">
+              a software development startup founded by a group of Mexican
+              students from Tec de Monterrey that understand the critical role
+              that a strong{" "}
+              <span className="underlined-text">
                 online presence plays in the success of businesses today
-              </span>. They are passionate about helping startups make the most of
-              this opportunity.
+              </span>
+              . They are passionate about helping startups make the most of this
+              opportunity.
             </p>
-            <div style={{ textAlign: "right", paddingBottom:"40px"}}>
+            <div style={{ textAlign: "right", paddingBottom: "40px" }}>
               <Link to={"/talk-to-us"} target="_blank">
                 <button class="learn-more">
                   <span class="circle" aria-hidden="true">
@@ -45,44 +51,38 @@ const Header = ({ imageUrl, title }) => {
           />
         </Grid>
       </Grid>
-      <Grid container spacing={2} sx={{ marginBottom: "5rem"}}>
+      <Grid container spacing={2} sx={{ marginBottom: "5rem" }}>
         <Grid item xs={12} sm={12} md={4}>
-          < Card sx={{ borderRadius: "2rem", backgroundColor: "rgba(255, 0, 153, 0.8)", width: "100%", minHeight: '190px', 
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-        alignItems: 'center',}}>
-            <CardContent sx={{textAlign: "center"}}>
-              <h5 style={{ color: "#FFFFFF", textAlign:"center", margin: 0}}>Dedicated team crafting innovative, customized web solutions for startups.</h5>
-            </CardContent>
-          </Card>
+          <ValuesCard
+            title="Dedicated Team"
+            paragraph="Dedicated team crafting innovative, customized web solutions for startups."
+            bgColor="rgba(255, 0, 153, 0.8)"
+            textColor="#FFFFFF"
+            titleColor="#FFFFFF"
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
-          < Card sx={{ borderRadius: "2rem", backgroundColor: "rgba(255, 153, 200, 0.8)", width: "100%",minHeight: '190px', 
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-        alignItems: 'center',}}>
-            <CardContent sx={{textAlign: "center" }}>
-              <h5 style={{ color: "#FFFFFF", textAlign:"center",margin: 0 }}>Tailored web solutions to meet the unique needs of each startup.</h5>
-            </CardContent>
-          </Card>
+          <ValuesCard
+            title="Tailored Solutions"
+            paragraph="Tailored web solutions to meet the unique needs of each startup."
+            bgColor="rgba(255, 153, 200, 0.8)"
+            textColor="#FFFFFF"
+            titleColor="#FFFFFF"
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
-          < Card sx={{ borderRadius: "2rem", backgroundColor: "rgba(247, 198, 255, 0.8)", width: "100%", minHeight: '190px', 
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-        alignItems: 'center',
-            }}>
-            <CardContent sx={{ textAlign: "center" }}>
-              <h5 style={{ color: "#FFFFFF",textAlign:"center",margin: 0 }}>Expertise and commitment driving digital transformation for emerging businesses.</h5>
-            </CardContent>
-          </Card>
+          <ValuesCard
+            title="Expertise & Commitment"
+            paragraph="Expertise and commitment driving digital transformation for emerging businesses."
+            bgColor="rgba(247, 198, 255, 0.8)"
+            textColor="#FFFFFF"
+            titleColor="#FFFFFF"
+          />
         </Grid>
       </Grid>
-      <p className="believe" style={{textAlign:"right"}}>
-        <span className="underlined-text">Empowering startups</span> with modern<br />
+      <p className="believe" style={{ textAlign: "right" }}>
+        <span className="underlined-text">Empowering startups</span> with modern
+        <br />
         websites for success in the digital age <br />
         it’s <span className="underlined-text">our goal.</span>
       </p>

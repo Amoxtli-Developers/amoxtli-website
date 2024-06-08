@@ -68,11 +68,19 @@ const BlurImage = ({ card }: { card: Card }) => {
       src={card.thumbnail}
       onLoad={() => setLoaded(true)}
       className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
+        "object-cover object-top absolute inset-0 w-full h-full transition duration-200",
         loaded ? "blur-none" : "blur-md"
       )}
       alt="thumbnail"
-      style={{objectFit: "cover", width: "100%", height: "100", position: "absolute", top: 0, left: 0}}
+      style={{
+        objectFit: "cover",
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        top: 0,
+        left: 0,
+        maxHeight: "100%", // Ensure the image doesn't exceed the parent's height
+      }}
     />
   );
 };
@@ -102,7 +110,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="relative px-8 pb-4 z-20 flex justify-center items-center h-full"
+        className="relative z-20 flex justify-center items-center h-full"
       >
         <div className="text-center">{selected?.content}</div>
       </motion.div>

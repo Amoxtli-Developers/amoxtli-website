@@ -31,14 +31,7 @@ function ServicesView() {
           lg={4}
           sx={{ justifyContent: "center", display: "flex" }}
         >
-          <Card
-            style={{
-              border: "none",
-              boxShadow: "0 0 10px rgba(0,0,0,0.2)",
-              backgroundColor: "#FBFBFB",
-              borderRadius: "2rem",
-            }}
-          >
+          <Box>
             <CardMedia
               style={{
                 ...cardMediaStyles,
@@ -54,7 +47,7 @@ function ServicesView() {
                 devise a digital strategy geared towards achieving success.
               </p>
             </CardContent>
-          </Card>
+          </Box>
         </Grid>
 
         {/* Second Card */}
@@ -67,14 +60,7 @@ function ServicesView() {
           lg={4}
           sx={{ justifyContent: "center", display: "flex" }}
         >
-          <Card
-            style={{
-              border: "none",
-              boxShadow: "0 0 10px rgba(0,0,0,0.2)",
-              backgroundColor: "#FBFBFB",
-              borderRadius: "2rem",
-            }}
-          >
+          <Box>
             <CardMedia
               style={{
                 ...cardMediaStyles,
@@ -90,7 +76,7 @@ function ServicesView() {
                 a clear emphasis on accomplishing your objectives.
               </p>
             </CardContent>
-          </Card>
+          </Box>
         </Grid>
 
         {/* Third Card */}
@@ -102,14 +88,7 @@ function ServicesView() {
           lg={4}
           sx={{ justifyContent: "center", display: "flex" }}
         >
-          <Card
-            style={{
-              border: "none",
-              boxShadow: "0 0 10px rgba(0,0,0,0.2)",
-              backgroundColor: "#FBFBFB",
-              borderRadius: "2rem",
-            }}
-          >
+          <Box>
             <CardMedia
               style={{
                 ...cardMediaStyles,
@@ -126,7 +105,7 @@ function ServicesView() {
                 for its own sake.
               </p>
             </CardContent>
-          </Card>
+          </Box>
         </Grid>
       </Grid>
     </Box>

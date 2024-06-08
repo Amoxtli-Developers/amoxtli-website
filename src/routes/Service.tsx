@@ -1,13 +1,13 @@
-import Preloader from '../Components/Preloader';
-import React, { useEffect, useState} from 'react';
-import { useLocation } from 'react-router-dom';
+import Preloader from "../Components/Preloader";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import ServicesView from "../Components/ServicesView";
-import FloatingButton from '../Components/FloatingButton';
+import FloatingButton from "../Components/FloatingButton";
 import CustomCtaBanner from "../Components/CtaBanner";
-import Development from "../Components/Development";
-import ChatModal from '../Components/ChatModal';
+import ChatModal from "../Components/ChatModal";
+import { ServiceGrid } from "../Components/ServiceGrid/ServiceGrid";
 
 function Service() {
   const [isLoading, setIsLoading] = useState(false);
@@ -37,7 +37,7 @@ function Service() {
       <Navbar />
       {isLoading && <Preloader />}
       <ServicesView />
-      <Development />
+      <ServiceGrid />
       <CustomCtaBanner />
       <FloatingButton onClick={handleOpenModal} />
       <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />

@@ -5,7 +5,7 @@ import TeamCarousel from "./TeamCarousel";
 import { Grid, Typography } from "@mui/material";
 import ValuesCard from "./ValuesCard";
 import axolotlGift from "../assets/amoxtli-merch.jpg";
-import { ImageGrid } from "./ImageGrid/ImageGrid";
+
 
 function AboutView() {
   const values = [
@@ -33,30 +33,74 @@ function AboutView() {
   ];
   return (
     <Box className="main-header">
-      <Typography className="header-title title-edited" sx={{ textAlign: "left", fontSize: {xs: "40px", md:"100px"} }}>
+      <Typography
+        className="header-title title-edited"
+        sx={{
+          textAlign: "left",
+          fontSize: { xs: "60px", md: "100px" },
+          fontFamily: "Poppins",
+        }}
+      >
         We are <span className="underlined-text">Amoxtli Web Developers</span>
       </Typography>
-      <Typography className="etimology" sx={{marginBottom: {xs: "2rem", md: "5rem"}}} >amoxtli /ˈaːmoʃtɬi/ náhuatl: codex</Typography>
+      <Typography
+        className="etimology"
+        sx={{ marginBottom: { xs: "2rem", md: "5rem" }, fontFamily: "Poppins" }}
+      >
+        amoxtli /ˈaːmoʃtɬi/ náhuatl: codex
+      </Typography>
 
-      <p className="quote">
+      <Typography
+        className="quote"
+        sx={{
+          fontSize: { xs: "35px", md: "45px" },
+          marginBottom: "3rem",
+          fontFamily: "Poppins",
+        }}
+      >
         our mission is to empower you with the essential <br />
         tools to kickstart your{" "}
         <span className="underlined-text">online journey.</span>
-      </p>
+      </Typography>
 
       <img src={axolotlGift} alt="about-header-img" className="about-img"></img>
 
-      <p className="believe">
+      <Typography
+        className="believe"
+        sx={{
+          fontSize: { xs: "35px", md: "45px" },
+          marginBottom: "3rem",
+          fontFamily: "Poppins",
+        }}
+      >
         we believe <span className="underlined-text">technology</span> is the
         key <br />
         to start evolving your business <br />
         into the <span className="underlined-text">digital era.</span>
-      </p>
-      <h2 className="section-title">Meet the Team</h2>
+      </Typography>
+      <Typography
+        className="section-title"
+        sx={{
+          fontSize: { xs: "45px", md: "55px" },
+          marginBottom: "3rem",
+          fontFamily: "Poppins",
+        }}
+      >
+        Meet the <span className="underlined-text">AMOXTLERS</span>
+      </Typography>
       <TeamCarousel />
-      <h2 className="section-title">Our Values</h2>
+      <Typography
+        className="section-title"
+        sx={{
+          fontSize: { xs: "35px", md: "45px" },
+          marginBottom: "3rem",
+          fontFamily: "Poppins",
+        }}
+      >
+        Our Values
+      </Typography>
 
-      <Grid container spacing={2} sx={{ marginBottom: "5rem" }}>
+      <Grid container spacing={2} >
         {values.map((value, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <ValuesCard
@@ -69,7 +113,8 @@ function AboutView() {
           </Grid>
         ))}
       </Grid>
-      <ImageGrid />
+
+
       <p className="dream">
         our dream is to make sure that <br />
         <span className="underlined-text">good ideas</span> are not lost and{" "}
@@ -81,34 +126,66 @@ function AboutView() {
           item
           xs={12}
           sm={6}
-          md={6}
+          md={3}
           sx={{ justifyContent: "center", display: "flex" }}
         >
           <ValuesCard
             title={"Ensuring Success"}
             paragraph={
-              "full control when outsourcing development of your saas product"
+              "full control when outsourcing development of your SaaS product"
             }
-            bgColor={"rgb(247, 247, 247)"}
+            bgColor={"rgb(252, 252, 252)"}
             textColor={"black"}
             titleColor={"#fa206f"}
-            cardWidth={"70%"}
           />
         </Grid>
         <Grid
           item
           xs={12}
           sm={6}
-          md={6}
+          md={3}
           sx={{ justifyContent: "center", display: "flex" }}
         >
           <ValuesCard
             title={"Securing Ownership"}
             paragraph={"tamper-proof evidence of the ownership of all the work"}
-            bgColor={"rgb(247, 247, 247)"}
+            bgColor={"rgb(252, 252, 252)"}
             textColor={"black"}
             titleColor={"#fa206f"}
-            cardWidth={"70%"}
+          />
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={3}
+          sx={{ justifyContent: "center", display: "flex" }}
+        >
+          <ValuesCard
+            title={"Quality Assurance"}
+            paragraph={
+              "rigorous testing to ensure your product meets high standards"
+            }
+            bgColor={"rgb(252, 252, 252)"}
+            textColor={"black"}
+            titleColor={"#fa206f"}
+          />
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={3}
+          sx={{ justifyContent: "center", display: "flex" }}
+        >
+          <ValuesCard
+            title={"Continuous Improvement"}
+            paragraph={
+              "ongoing enhancements to keep your product ahead of the curve"
+            }
+            bgColor={"rgb(252, 252, 252)"}
+            textColor={"black"}
+            titleColor={"#fa206f"}
           />
         </Grid>
       </Grid>
