@@ -1,7 +1,6 @@
 .NavbarItems {
   /* background-color: #222; */
   background-color: #fff;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
   width: 95%;
   height: 80px;
   border-radius: 13px;
@@ -14,6 +13,13 @@
   left: 50%;
   z-index: 9999;
   transform: translate(-50%);
+}
+
+.NavbarItems.blurred {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .navbar-logo {
@@ -115,6 +121,12 @@
   display: none;
 }
 
+.navbar-logo.active,
+.nav-menu .active,
+.talkToUs.active {
+  color: #fa206f;
+}
+
 @media screen and (max-width: 850px) {
   .NavbarItems {
     z-index: 99;
@@ -187,6 +199,4 @@
   .fa-times {
     color: #222;
   }
-
- 
 }

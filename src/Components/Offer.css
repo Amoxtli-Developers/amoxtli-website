@@ -1,0 +1,18 @@
+.service-section-title {
+    font-size: 40px; /* default font size for small screens */
+    margin-bottom: 3rem;
+    font-weight: 500;
+    text-align: right !important;
+  }
+  
+  @media (min-width: 768px) {
+    .service-section-title {
+      font-size: 56px; /* font size for medium screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .service-section-title{
+      font-size: 72px; /* font size for large screens */
+    }
+  }

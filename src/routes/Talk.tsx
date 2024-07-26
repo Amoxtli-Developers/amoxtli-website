@@ -12,7 +12,7 @@ function Talk() {
     setIsLoading(true);
 
     // Simulate an async loading process like an API call
-    const timer = setTimeout(() => setIsLoading(false), 1500); // Adjust time as needed
+    const timer = setTimeout(() => setIsLoading(false), 1000); // Adjust time as needed
 
     // Cleanup the timer when the component unmounts
     return () => clearTimeout(timer);

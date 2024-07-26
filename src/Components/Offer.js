@@ -2,13 +2,18 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
 import "./Offer.css";
-import { Box, List, ListItem, ListItemIcon } from "@mui/material";
-
+import { Box, List, ListItem, ListItemIcon, Typography } from "@mui/material";
 
 const Offer = ({ imageUrl, title, services }) => {
   return (
-    <Box className="section">
-      <h3 className="section-title">{title}</h3>
+    <Box className="section" sx={{ textAlign: "right" }}>
+      <Typography
+        variant="h2"
+        className="service-section-title"
+        sx={{ textAlign: "right", fontFamily: "Poppins"}}
+      >
+        {title}
+      </Typography>
       <Grid container spacing={2}>
         {/* Left Column: Image */}
         <Grid item xs={12} sm={5}>
@@ -32,8 +37,12 @@ const Offer = ({ imageUrl, title, services }) => {
                     />
                   </ListItemIcon>
                   <div>
-                    <h4 className="service-title">{service.title}</h4>
-                    <p className="service-text"> {service.text}</p>
+                    <Typography variant="h6" className="service-title">
+                      {service.title}
+                    </Typography>
+                    <Typography variant="body2" className="service-text">
+                      {service.text}
+                    </Typography>
                   </div>
                 </ListItem>
               ))}

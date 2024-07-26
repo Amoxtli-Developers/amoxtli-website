@@ -29,7 +29,7 @@ function TeamCarousel() {
     {
       image: alfa,
       title: "Arturo Alfaro",
-      description: "Software Engineer by profession, musician by passion.",
+      description: "Software Engineer by profession, drum player by passion.",
       badgeContent: "Back-end",
     },
 
@@ -78,7 +78,7 @@ function TeamCarousel() {
         className="mySwiper"
       >
         {cardDataArray.map((cardData, index) => (
-          <SwiperSlide style={{ justifyContent: "center", display: "flex" }}>
+          <SwiperSlide style={{ justifyContent: "center", display: "flex", paddingLeft: 8, paddingRight: 8 }}>
             <TeamCarouselCard
               key={index}
               title={cardData.title}

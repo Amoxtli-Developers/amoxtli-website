@@ -1,36 +1,90 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./AboutView.css";
 import Box from "@mui/material/Box";
 import TeamCarousel from "./TeamCarousel";
 import { Grid, Typography } from "@mui/material";
 import ValuesCard from "./ValuesCard";
 import axolotlGift from "../assets/amoxtli-merch.jpg";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import PullUpText from "./PullUpText/PullUpText";
+import { motion, useInView } from "framer-motion";
 
+gsap.registerPlugin(ScrollTrigger);
+
+const fadeInVariant = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+    },
+  },
+};
 
 function AboutView() {
+  const valuesRef = useRef([]);
+  const meetRef = useRef(null);
+  const fadeInRef = useRef(null);
+  const isInView = useInView(fadeInRef, { once: true });
+
+  valuesRef.current = [];
+
+  useEffect(() => {
+    valuesRef.current.forEach((el, index) => {
+      gsap.from(el, {
+        opacity: 0,
+        y: 50,
+        duration: 0.7,
+        delay: index * 0.1,
+        scrollTrigger: {
+          trigger: el,
+          start: "top center",
+        },
+      });
+    });
+
+    if (meetRef.current) {
+      gsap.from(meetRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.1,
+        scrollTrigger: {
+          trigger: meetRef.current,
+          start: "top center",
+        },
+      });
+    }
+  }, []);
+
+  const addToRefs = (el) => {
+    if (el && !valuesRef.current.includes(el)) {
+      valuesRef.current.push(el);
+    }
+  };
+
   const values = [
     {
-      title: "customer-centric",
-      paragraph:
-        "we always listen to people and at every stage we do everything to achieve the best result",
+      title: "Customer First",
+      paragraph: "We listen, adapt, and deliver excellence.",
       bgColor: "rgba(255, 0, 153, 0.8)",
       textColor: "#FFFFFF",
     },
     {
-      title: "business-oriented",
-      paragraph:
-        "we communicate in plain language and know how to explain complex things with simple words",
+      title: "Business Savvy",
+      paragraph: "Clear, simple, and effective communication.",
       bgColor: "rgba(255, 153, 200, 0.8)",
       textColor: "#FFFFFF",
     },
     {
-      title: "creative engineering",
-      paragraph:
-        "we believe that true magic is born at the intersection of modern technology and creativity",
+      title: "Creative Tech",
+      paragraph: "Innovation at the intersection of tech and creativity.",
       bgColor: "rgba(247, 198, 255, 0.8)",
       textColor: "#FFFFFF",
     },
   ];
+
   return (
     <Box className="main-header">
       <Typography
@@ -50,59 +104,50 @@ function AboutView() {
         amoxtli /ˈaːmoʃtɬi/ náhuatl: codex
       </Typography>
 
-      <Typography
-        className="quote"
-        sx={{
-          fontSize: { xs: "35px", md: "45px" },
-          marginBottom: "3rem",
-          fontFamily: "Poppins",
-        }}
-      >
-        our mission is to empower you with the essential <br />
-        tools to kickstart your{" "}
-        <span className="underlined-text">online journey.</span>
-      </Typography>
+      <PullUpText />
 
       <img src={axolotlGift} alt="about-header-img" className="about-img"></img>
 
-      <Typography
-        className="believe"
-        sx={{
-          fontSize: { xs: "35px", md: "45px" },
-          marginBottom: "3rem",
-          fontFamily: "Poppins",
-        }}
+      <motion.div
+        ref={fadeInRef}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={fadeInVariant}
       >
-        we believe <span className="underlined-text">technology</span> is the
-        key <br />
-        to start evolving your business <br />
-        into the <span className="underlined-text">digital era.</span>
-      </Typography>
-      <Typography
-        className="section-title"
-        sx={{
-          fontSize: { xs: "45px", md: "55px" },
-          marginBottom: "3rem",
-          fontFamily: "Poppins",
-        }}
-      >
-        Meet the <span className="underlined-text">AMOXTLERS</span>
-      </Typography>
-      <TeamCarousel />
-      <Typography
-        className="section-title"
-        sx={{
-          fontSize: { xs: "35px", md: "45px" },
-          marginBottom: "3rem",
-          fontFamily: "Poppins",
-        }}
-      >
-        Our Values
-      </Typography>
+        <Typography
+          sx={{
+            fontSize: { xs: "24px", md: "36px", lg: "58px" },
+            marginBottom: "8rem",
+            fontFamily: "Poppins",
+            textAlign: "left",
+          }}
+        >
+          we believe <span className="underlined-text">technology</span> is the
+          key <br />
+          to start evolving your business <br />
+          into the <span className="underlined-text">digital era.</span>
+        </Typography>
+      </motion.div>
 
-      <Grid container spacing={2} >
+      <div ref={meetRef} style={{ marginBottom: "8rem", marginTop: "8rem" }}>
+        <h3 className="section-title" style={{ textAlign: "right" }}>
+          Meet the <span className="underlined-text">AMOXTLERS</span>
+        </h3>
+        <TeamCarousel />
+      </div>
+
+      <h3
+        className="section-title"
+        style={{
+          textAlign: "center",
+        }}
+      >
+        Our values
+      </h3>
+
+      <Grid container spacing={2}>
         {values.map((value, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+          <Grid item xs={12} sm={6} md={4} key={index} ref={addToRefs}>
             <ValuesCard
               title={value.title}
               paragraph={value.paragraph}
@@ -113,7 +158,6 @@ function AboutView() {
           </Grid>
         ))}
       </Grid>
-
 
       <p className="dream">
         our dream is to make sure that <br />
@@ -128,11 +172,12 @@ function AboutView() {
           sm={6}
           md={3}
           sx={{ justifyContent: "center", display: "flex" }}
+          ref={addToRefs}
         >
           <ValuesCard
             title={"Ensuring Success"}
             paragraph={
-              "full control when outsourcing development of your SaaS product"
+              "Full control when outsourcing development of your SaaS product."
             }
             bgColor={"rgb(252, 252, 252)"}
             textColor={"black"}
@@ -145,10 +190,13 @@ function AboutView() {
           sm={6}
           md={3}
           sx={{ justifyContent: "center", display: "flex" }}
+          ref={addToRefs}
         >
           <ValuesCard
             title={"Securing Ownership"}
-            paragraph={"tamper-proof evidence of the ownership of all the work"}
+            paragraph={
+              "Tamper-proof evidence of the ownership of all the work."
+            }
             bgColor={"rgb(252, 252, 252)"}
             textColor={"black"}
             titleColor={"#fa206f"}
@@ -160,11 +208,12 @@ function AboutView() {
           sm={6}
           md={3}
           sx={{ justifyContent: "center", display: "flex" }}
+          ref={addToRefs}
         >
           <ValuesCard
             title={"Quality Assurance"}
             paragraph={
-              "rigorous testing to ensure your product meets high standards"
+              "Rigorous testing to ensure your product meets high standards."
             }
             bgColor={"rgb(252, 252, 252)"}
             textColor={"black"}
@@ -177,11 +226,12 @@ function AboutView() {
           sm={6}
           md={3}
           sx={{ justifyContent: "center", display: "flex" }}
+          ref={addToRefs}
         >
           <ValuesCard
             title={"Continuous Improvement"}
             paragraph={
-              "ongoing enhancements to keep your product ahead of the curve"
+              "Ongoing enhancements to keep your product ahead of the curve."
             }
             bgColor={"rgb(252, 252, 252)"}
             textColor={"black"}

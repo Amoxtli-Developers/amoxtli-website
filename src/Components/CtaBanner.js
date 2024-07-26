@@ -5,7 +5,7 @@ import "./CtaBanner.css";
 
 const CustomCtaBanner = () => {
   return (
-    <Box className="section cta-banner" sx={{ marginBottom: "4rem" }}>
+    <Box className="section cta-banner shadow" sx={{ marginBottom: "4rem" }}>
       <Grid container justifyContent="center">
         <Grid item xs={12} sm={10} md={8} lg={6}>
           <h2 style={{ marginBottom: "2rem" }} className="cta-title">

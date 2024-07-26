@@ -5,6 +5,7 @@ import "./Header.css";
 import { Box } from "@mui/material";
 import ValuesCard from "./ValuesCard";
 import "./AboutView.css";
+import WordRotate from "./WordRotate/WordRotate";
 
 const Header = ({ imageUrl, title }) => {
   return (
@@ -14,22 +15,25 @@ const Header = ({ imageUrl, title }) => {
         <Grid item xs={12} sm={6}>
           <div>
             <h1
-              className="header-title title-edited"
+              className="responsive-title title-edited"
               style={{ textAlign: "left" }}
             >
-              {title}
+              {title}{" "}
+              <span className="underlined-text">Amoxtli Web Developers</span>
             </h1>
-            <p className="header-text">
-              <span className="underlined-text">Amoxtli Web Developers</span> is
-              a software development startup founded by a group of Mexican
-              students from Tec de Monterrey that understand the critical role
-              that a strong{" "}
+            <p className="header-p">
+              <span className="underlined-text">AWD</span> is a software
+              development startup founded in
+              <span className="underlined-text"> Mexico City</span> by a group
+              of passionate engineers seeking to help
               <span className="underlined-text">
-                online presence plays in the success of businesses today
-              </span>
-              . They are passionate about helping startups make the most of this
-              opportunity.
+                {" "}
+                startups and small businesses
+              </span>{" "}
+              succeed in the
+              <span className="underlined-text"> digital world</span>.
             </p>
+
             <div style={{ textAlign: "right", paddingBottom: "40px" }}>
               <Link to={"/talk-to-us"} target="_blank">
                 <button class="learn-more">
@@ -54,8 +58,8 @@ const Header = ({ imageUrl, title }) => {
       <Grid container spacing={2} sx={{ marginBottom: "5rem" }}>
         <Grid item xs={12} sm={12} md={4}>
           <ValuesCard
-            title="Dedicated Team"
-            paragraph="Dedicated team crafting innovative, customized web solutions for startups."
+            title="Innovative Team"
+            paragraph="Building custom web solutions for startup success."
             bgColor="rgba(255, 0, 153, 0.8)"
             textColor="#FFFFFF"
             titleColor="#FFFFFF"
@@ -63,8 +67,8 @@ const Header = ({ imageUrl, title }) => {
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
           <ValuesCard
-            title="Tailored Solutions"
-            paragraph="Tailored web solutions to meet the unique needs of each startup."
+            title="Tailored Approach"
+            paragraph="Crafting unique solutions for every client."
             bgColor="rgba(255, 153, 200, 0.8)"
             textColor="#FFFFFF"
             titleColor="#FFFFFF"
@@ -72,19 +76,25 @@ const Header = ({ imageUrl, title }) => {
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
           <ValuesCard
-            title="Expertise & Commitment"
-            paragraph="Expertise and commitment driving digital transformation for emerging businesses."
+            title="Expert Commitment"
+            paragraph="Empowering startups through digital innovation."
             bgColor="rgba(247, 198, 255, 0.8)"
             textColor="#FFFFFF"
             titleColor="#FFFFFF"
           />
         </Grid>
       </Grid>
-      <p className="believe" style={{ textAlign: "right" }}>
-        <span className="underlined-text">Empowering startups</span> with modern
-        <br />
-        websites for success in the digital age <br />
-        it’s <span className="underlined-text">our goal.</span>
+      <p
+        className="believe flex flex-wrap items-center justify-end"
+        style={{ textAlign: "right" }}
+      >
+        <span className="mx-2">Empowering startups</span> with{" "}
+        <WordRotate
+          className="underlined-text mx-2"
+          words={["modern", "unique", "useful", "innovative", "creative"]}
+        />
+        <span>websites for success it’s</span>
+        <span className="underlined-text mx-2">our goal.</span>
       </p>
     </Box>
   );
