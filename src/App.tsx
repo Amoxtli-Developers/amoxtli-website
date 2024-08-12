@@ -2,7 +2,6 @@ import React, { ReactNode, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
-import Service from "./routes/Service";
 import How from "./routes/How";
 import Client from "./routes/Client";
 import Cases from "./routes/Cases";
@@ -10,6 +9,7 @@ import Talk from "./routes/Talk";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import "./styles/tailwind.css";
+import Pricing from "./routes/Pricing";
 
 interface WrapperProps {
   children: ReactNode;
@@ -31,11 +31,11 @@ function App() {
           <Route path="*" element={<App />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Service />} />
           <Route path="/client-stories" element={<Client />} />
           <Route path="/client-case/:id" element={<Cases />} />
           <Route path="/how-it-works" element={<How />} />
           <Route path="/talk-to-us" element={<Talk />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </Wrapper>
       

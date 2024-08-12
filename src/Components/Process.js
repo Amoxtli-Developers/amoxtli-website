@@ -12,8 +12,8 @@ export default function Process() {
   };
 
   return (
-    <Box className="section">
-      <h3 className="section-title" style={{ textAlign: "left" }}>
+    <Box className="section" mb={0}>
+      <h3 className="section-title" style={{ textAlign: "center" }}>
         Our Process
       </h3>
       <Tabs activeKey={tabKey} onSelect={handleSelect} className="custom-tabs">
@@ -49,34 +49,19 @@ export default function Process() {
             {/* Right Column: Image */}
             <Grid item xs={12} sm={8}>
               <p className="header-text" style={{ color: "#585e68" }}>
-                In this initial step, we aim to determine if our services align
-                with your project's needs. This involves assessing the technical
-                feasibility, understanding your team's objectives, budget, and
-                timeline, and ensuring that our expectations are in sync.
-                Together, we can decide on the next steps.
+                In this phase, we ensure our services meet your project's needs
+                by evaluating technical feasibility, understanding your
+                objectives, budget, and timeline. We begin with a call to
+                discuss your project goals and requirements. Our team will then
+                review the information to confirm feasibility and alignment with
+                your budget and timeline.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                You kickstart the process by scheduling a call with an Amoxtli
-                Web Developers account executive to discuss your project and our
-                approach. During this conversation, they will gain insights into
-                your team, your project goals, and the critical product
-                requirements necessary to achieve those goals. Following this
-                call, our product team will craft a summary, which will be
-                reviewed to confirm technical feasibility and align with your
-                budget and timeline.
-              </p>
-              <p className="header-text" style={{ color: "#585e68" }}>
-                The outcome of this initial phase is a high-level written
-                proposal for the project's development. This proposal outlines
-                the features we intend to build, provides an estimate of the
-                expected budget, and outlines the stages and timeline leading to
-                the project's launch. While the finer details will be refined in
-                the formal scoping process, our objective in this step is to
-                equip you with the information you need to make an informed
-                decision. When you're ready to proceed, you can secure your
-                project's spot by placing a refundable deposit, which will allow
-                you to engage with your designated Project Manager for the
-                scoping phase.
+                The result is a high-level proposal outlining the project's
+                features, budget estimate, and timeline. This proposal helps you
+                make an informed decision. To proceed, secure your spot with a
+                refundable deposit, allowing you to engage with a Project
+                Manager for the scoping phase.
               </p>
             </Grid>
           </Grid>
@@ -115,36 +100,23 @@ export default function Process() {
             {/* Right Column: Image */}
             <Grid item xs={12} sm={8}>
               <p className="header-text" style={{ color: "#585e68" }}>
-                The primary objective of the scoping step is to achieve a
-                precise alignment regarding the features and architectural
-                aspects of your app. Thoroughly defining these elements upfront
-                is instrumental in facilitating a swift development process and,
-                most importantly, ensuring that the final product meets your
-                expectations.
+                The scoping step aims to align on the features and architecture
+                of your app, ensuring a smooth development process and a final
+                product that meets your expectations.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                We initiate this phase by pairing you with a dedicated Product
-                Manager (PM) from the Amoxtli Web Developers team, carefully
-                selected to best address your project's requirements. Throughout
-                your interactions with the PM, you will systematically traverse
-                the entire app's workflow. At critical junctures, decisions will
-                be made regarding what to include in the initial release versus
-                what can be deferred, all while strategizing the most efficient
-                solutions that fit within your budget. Our approach typically
-                leans toward an agile and efficient development path, with room
-                for you to incorporate additional features as needed.
-                Concurrently, our technical team will conduct in-depth research
-                and meticulously document all project requirements.
+                You'll work with a dedicated Product Manager (PM) to
+                systematically define the app's workflow, making key decisions
+                on initial release features and strategizing efficient solutions
+                within your budget. Our agile approach allows for the
+                incorporation of additional features as needed, while our
+                technical team conducts in-depth research and documentation.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                The culmination of the scoping phase is a comprehensive scope
-                document. This document serves as a detailed blueprint,
-                specifying the exact users, pages, and features that will be
-                incorporated into your initial product release. It also outlines
-                a clear timeline and budget for the development process. At this
-                juncture, you will gain a comprehensive understanding of how
-                your visionary concept transforms into a tangible and specific
-                product.
+                The outcome is a comprehensive scope document, detailing users,
+                pages, and features for the initial release, along with a clear
+                timeline and budget. This gives you a clear understanding of how
+                your vision becomes a tangible product.
               </p>
             </Grid>
           </Grid>
@@ -185,34 +157,18 @@ export default function Process() {
             {/* Right Column: Image */}
             <Grid item xs={12} sm={8}>
               <p className="header-text" style={{ color: "#585e68" }}>
-                With the feature requirements firmly established, the next and
-                final step in the pre-build process involves the integration of
-                high-fidelity mockups, which provide a visual representation of
-                the user experience as they engage with your product. This is
-                where the expertise of our UX designer at Amoxtli Web Developers
-                takes center stage.
+                The final pre-build step involves creating high-fidelity mockups
+                to visualize the user experience. Our UX designer at Amoxtli Web
+                Developers will craft customized Figma mockups based on the
+                scoping document, incorporating your branding and ensuring
+                alignment with best practices and our development process.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                Building upon the written feature descriptions from the scoping
-                document, our UX designer crafts a comprehensive set of
-                customized Figma mockups tailored specifically for your app.
-                These mockups are designed using Figma design framework while
-                incorporating your company's branding, ensuring that the designs
-                are a precise reflection of your unique features and identity.
-                This approach guarantees that the designs not only align with
-                industry best practices and standard UX conventions but are also
-                optimized to seamlessly integrate with our development process,
-                ensuring efficient assembly.
-              </p>
-              <p className="header-text" style={{ color: "#585e68" }}>
-                Once all visual elements and textual content are seamlessly
-                integrated, you'll possess a complete scope document that serves
-                as the blueprint for your project's development. You have the
-                opportunity to provide detailed feedback within this document,
-                enabling your Project Manager (PM) to make necessary
-                adjustments. This may include corresponding updates to the
-                budget and timeline, all in an effort to ensure your complete
-                satisfaction with the plan.
+                These mockups provide a precise visual representation of your
+                app, optimized for efficient development. You can provide
+                feedback to make necessary adjustments, which may also update
+                the budget and timeline, ensuring your complete satisfaction
+                with the plan.
               </p>
             </Grid>
           </Grid>
@@ -254,28 +210,21 @@ export default function Process() {
             {/* Right Column: Image */}
             <Grid item xs={12} sm={8}>
               <p className="header-text" style={{ color: "#585e68" }}>
-                Armed with a comprehensive build plan, the focal point of
-                attention now shifts to your Amoxtli Web Developers build team,
-                tasked with the construction and rigorous testing of your entire
-                application in weekly milestone increments.
+                With a comprehensive build plan, your Amoxtli Web Developers
+                build team will construct and test your application in weekly
+                milestones.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                Guiding this process is your designated Project Manager (PM),
-                who orchestrates a team composed of a lead developer, a UI
-                assembler, and a QA specialist. Each week, this dedicated team
-                diligently constructs and thoroughly tests the features outlined
-                for that specific milestone. Upon successful completion, the
-                team delivers the functional app, accompanied by clear testing
-                instructions, enabling you to confirm that everything aligns
-                with your expectations. Your PM will also facilitate a live
-                delivery call, ensuring that we remain in sync and are
-                well-prepared for the subsequent milestone.
+                Your Project Manager (PM) will lead a team of a lead developer,
+                a UI assembler, and a QA specialist, who will build and test
+                features each week. After each milestone, you will receive the
+                functional app and testing instructions to ensure it meets your
+                expectations. The PM will also conduct live delivery calls to
+                stay aligned for the next milestone.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                This phase reaches its conclusion when a fully functional
-                version of your application, with all features meticulously
-                tested by Amoxtli Web Developers, stands ready for your final
-                review before the official launch!
+                This phase concludes with a fully functional application,
+                thoroughly tested and ready for your final review before launch.
               </p>
             </Grid>
           </Grid>
@@ -314,32 +263,20 @@ export default function Process() {
             {/* Right Column: Image */}
             <Grid item xs={12} sm={8}>
               <p className="header-text" style={{ color: "#585e68" }}>
-                Even the most straightforward software products can conceal
-                complexity beneath the surface, often requiring a reasonable
-                amount of time for thorough testing and validation. To ensure a
-                smooth transition, we extend a 30-day coverage window, during
-                which our team remains dedicated to confirming, launching, and
-                providing support for your application.
+                We provide a 30-day coverage window to confirm, launch, and
+                support your application, ensuring a smooth transition.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                Upon handing over the application to you, our internal team
-                completes an exhaustive Quality Assurance (QA) process,
-                certifying that the software aligns with the defined scope. Your
-                first task is to conduct a comprehensive review of every facet
-                of the tool, highlighting any deviations from the confirmed
-                project scope. We've designed a user-friendly widget that
-                enables you to annotate the app itself, creating tickets that we
-                will subsequently clarify and address.
+                After handing over the application, our team completes a
+                thorough QA process to certify alignment with the project scope.
+                You will review the tool and highlight any deviations, using a
+                widget to annotate and create tickets for us to address.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                When you're ready to take your application live, we initiate the
-                deployment process on your custom domain. Furthermore, we
-                transfer all associated credentials and intellectual property
-                (IP) rights to you. It's a moment for celebrations and shared
-                success, complete with virtual hugs all around! Any remaining
-                time within the 30-day window serves as additional support, just
-                in case you happen to spot any minor details that may have
-                eluded previous scrutiny.
+                When you're ready to go live, we deploy the application on your
+                custom domain and transfer all credentials and IP rights to you.
+                The remaining time within the 30-day window provides additional
+                support for any minor issues that arise.
               </p>
             </Grid>
           </Grid>
@@ -375,29 +312,22 @@ export default function Process() {
             {/* Right Column: Image */}
             <Grid item xs={12} sm={8}>
               <p className="header-text" style={{ color: "#585e68" }}>
-                As you approach the conclusion of your "review and launch"
-                period, your dedicated Client Success Manager at Amoxtli Web
-                Developers will reach out to discuss the next steps. For the
-                majority of our clients, the launch represents just the initial
-                phase, as applications typically need to adapt and evolve in
-                response to user feedback.
+                As your "review and launch" period concludes, your Client
+                Success Manager will reach out to discuss next steps. Most
+                clients see the launch as just the beginning, needing to adapt
+                and evolve based on user feedback.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                We provide two distinct forms of post-launch support to cater to
-                your specific needs. The first option is a one-time capacity to
-                develop discrete features, ideal for clients in the early stages
-                of their project and mindful of their budget. The second option
-                is ongoing monthly capacity, tailored for more established
-                clients with a comprehensive roadmap and a continuous demand for
-                support and feature development.
+                We offer two post-launch support options: one-time capacity for
+                developing discrete features, suitable for early-stage projects
+                with budget considerations, and ongoing monthly capacity for
+                established clients needing continuous support and development.
               </p>
               <p className="header-text" style={{ color: "#585e68" }}>
-                In essence, we acknowledge that your journey and requirements
-                can be dynamic and unpredictable. Our objective is to empower
-                you with the flexibility to determine when and how you utilize
-                your Amoxtli Web Developers team to achieve your goals. We're
-                here to ensure that your project is both responsive to user
-                feedback and aligned with your evolving needs.
+                Our goal is to provide you with the flexibility to determine how
+                and when you utilize your Amoxtli Web Developers team, ensuring
+                your project responds to user feedback and aligns with your
+                evolving needs.
               </p>
             </Grid>
           </Grid>

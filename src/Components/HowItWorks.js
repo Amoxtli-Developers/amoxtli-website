@@ -1,46 +1,46 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import "./HowItWorks.css";
-import { Box, List, ListItem, ListItemIcon } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import "./AboutView.css";
+import { AnimatedListDemo } from "./AnimatedListDemo/AnimatedListDemo";
 
 const HowItWorks = ({ imageUrl, title, services }) => {
   return (
     <Box className="main-header">
-      <h1 className="header-title title-edited" style={{textAlign: "left"}}>{title}</h1>
       <Grid container spacing={2}>
-        {/* Left Column: List of Services */}
-        <Grid item xs={12} sm={7}>
-          <div>
-            <List sx={{ paddingBottom: "3rem" }}>
-              {services.map((service, index) => (
-                <ListItem key={index}>
-                  <ListItemIcon>
-                    <img
-                      src={service.iconUrl}
-                      alt="Service Icon"
-                      style={{ maxWidth: "4rem", marginRight: "1rem" }}
-                    />
-                  </ListItemIcon>
-                  <div>
-                    <h4 className="service-title">{service.title}</h4>
-                    <p className="service-text"> {service.text}</p>
-                  </div>
-                </ListItem>
-              ))}
-            </List>
-            
-          </div>
+        <Grid item xs={12} md={7}>
+          <Typography
+            className="header-title title-edited"
+            sx={{
+              textAlign: "left",
+              fontSize: { xs: "60px", md: "100px" },
+              fontFamily: "Poppins",
+            }}
+          >
+            {title} <span className="underlined-text">@ AWD</span>
+          </Typography>
         </Grid>
-        {/* Right Column: Image */}
-        <Grid item xs={12} sm={5}>
-          <img
-            src={imageUrl}
-            alt="HowItWorks-logo"
-            style={{ maxWidth: "85%", borderRadius: "2rem" }}
-          />
+        <Grid item xs={12} md={5}>
+          <Box mt={8}>
+            <AnimatedListDemo />
+          </Box>
         </Grid>
       </Grid>
+      <Typography
+        sx={{
+          fontSize: { xs: "20px", md: "32px", lg: "46px" },
+          marginBottom: { xs: "2rem", md: "6rem", lg: "8rem" },
+          fontFamily: "Poppins",
+          textAlign: "right",
+          mt: 8,
+        }}
+      >
+        Elevating your brand’s essence with{" "}
+        <span className="underlined-text">cutting-edge design</span> and{" "}
+        <span className="underlined-text">seamless user experiences</span> that
+        keep your audience hooked.
+      </Typography>
     </Box>
   );
 };

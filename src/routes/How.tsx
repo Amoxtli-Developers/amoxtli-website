@@ -1,6 +1,6 @@
-import Preloader from '../Components/Preloader';
-import React, { useEffect, useState} from 'react';
-import { useLocation } from 'react-router-dom';
+import Preloader from "../Components/Preloader";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import howImg from "../assets/home.jpg";
@@ -9,14 +9,12 @@ import service2 from "../assets/how-it-works/team.png";
 import service3 from "../assets/how-it-works/business.png";
 import service4 from "../assets/how-it-works/process.png";
 import HowItWorks from "../Components/HowItWorks";
-import Process from "../Components/Process";
 import CustomCtaBanner from "../Components/CtaBanner";
-import PricingCard from "../Components/PricingCard";
-import Title from "../Components/Title";
-import imagen from "../assets/how2.jpg";
-import Personalized from "../Components/Personalized";
-import FloatingButton from '../Components/FloatingButton';
-import ChatModal from '../Components/ChatModal';
+import FloatingButton from "../Components/FloatingButton";
+import ChatModal from "../Components/ChatModal";
+import { AppleCardDemo } from "../Components/AppleCardDemo/AppleCardDemo";
+import { CardHoverEffectDemo } from "../Components/CardHoverEffectDemo/CardHoverEffectDemo";
+import { BentoGridDemo } from "../Components/BentoGridDemo/BentoGridDemo";
 
 const services = [
   {
@@ -41,7 +39,6 @@ const services = [
   },
 ];
 
-const box_type = ["One Page", "Landing Page", "eCommerce"];
 
 function How() {
   const [isLoading, setIsLoading] = useState(false);
@@ -73,17 +70,12 @@ function How() {
       {isLoading && <Preloader />}
       <HowItWorks
         imageUrl={howImg}
-        title={"How it Works"}
+        title={"How we Work"}
         services={services}
       />
-      <Process />
-      <Title title={"Websites Pricing"} />
-      <div className="full_container">
-        {box_type.map((el) => {
-          return <PricingCard box_type_text={el} />;
-        })}
-      </div>
-      <Personalized imageUrl={imagen} title={"Personalized follow-up"} />
+      <CardHoverEffectDemo />
+      <AppleCardDemo />
+      <BentoGridDemo />
       <CustomCtaBanner />
       <FloatingButton onClick={handleOpenModal} />
       <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />

@@ -11,7 +11,6 @@ const Header = ({ imageUrl, title }) => {
   return (
     <Box className="main-header">
       <Grid container spacing={2} alignItems="center" justifyContent="center">
-        {/* Left Column: Text, Title, and Button */}
         <Grid item xs={12} sm={6}>
           <div>
             <h1

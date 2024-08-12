@@ -124,7 +124,7 @@ export default function PricingCard({ box_type_text }) {
         <div style={{ marginTop: "2rem" }}>
           <Link
             target="_blank"
-            to={"https://calendly.com/amoxtlidev/tuayi"}
+            to={"https://calendar.app.google/bgLwhAiDNCJKV5Ft7"}
           >
             <button className="learn-more">
               <span className="circle" aria-hidden="true">

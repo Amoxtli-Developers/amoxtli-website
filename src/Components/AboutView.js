@@ -9,6 +9,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import PullUpText from "./PullUpText/PullUpText";
 import { motion, useInView } from "framer-motion";
+import { ImageGrid } from "../Components/ImageGrid/ImageGrid";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -165,7 +166,13 @@ function AboutView() {
         <br />
         become a <span className="underlined-text">reality.</span>
       </p>
-      <Grid container spacing={2} sx={{ marginBottom: "5rem" }}>
+
+      <ImageGrid />
+      <Grid
+        container
+        spacing={2}
+        sx={{ marginBottom: "5rem", marginTop: { xs: "3rem ", md: "6rem" } }}
+      >
         <Grid
           item
           xs={12}

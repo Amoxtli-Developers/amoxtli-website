@@ -1,4 +1,5 @@
 import { cn } from "../../utils/cn";
+import { Typography } from "@mui/material";
 
 export const BentoGrid = ({
   className,
@@ -10,10 +11,11 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[20rem] md:grid-cols-3 gap-4 ",
+        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-[95rem] mx-auto",
         className
       )}
     >
+
       {children}
     </div>
   );
@@ -35,26 +37,36 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "rounded-[2rem] hover:shadow-xl transition duration-200 shadow-input shadow-lg p-4 bg-white ",
+        "row-span-1 rounded-[20px] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border-transparent justify-between flex flex-col space-y-4 shadow",
         className
       )}
-      style={{ textAlign: "left", overflow: "hidden"}}
     >
-      <div>{header}</div>
+      {header}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
-        {icon}
-        <div
-          className="font-sans font-bold mb-2 mt-2"
-          style={{ fontFamily: "Poppins" }}
+        <Typography
+          variant="h6"
+          sx={{
+            fontFamily: "Poppins",
+            fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" },
+            textAlign: "left",
+            color: "text.primary",
+            marginBottom: "0.5rem",
+            marginTop: "0.5rem",
+          }}
         >
           {title}
-        </div>
-        <div
-          className="font-sans font-normal"
-          style={{ fontFamily: "Poppins" }}
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            fontFamily: "Poppins",
+            fontSize: { xs: "0.75rem", sm: "0.875rem", md: "1rem" },
+            textAlign: "left",
+            color: "text.secondary",
+          }}
         >
           {description}
-        </div>
+        </Typography>
       </div>
     </div>
   );

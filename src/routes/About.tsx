@@ -8,6 +8,7 @@ import Footer from "../Components/Footer";
 import CustomCtaBanner from "../Components/CtaBanner";
 import ChatModal from '../Components/ChatModal';
 
+
 function About() {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
@@ -37,6 +38,7 @@ function About() {
       <Navbar />
       {isLoading && <Preloader />}
       <AboutView />
+
       <CustomCtaBanner />
       <FloatingButton onClick={handleOpenModal} />
       <ChatModal isOpen={isModalOpen} onClose={handleCloseModal} />

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
 import "./NavbarStyles.css";
+import logo from "../assets/amoxtli.png"; // Adjust the path as needed
 
 class Navbar extends Component {
   state = { clicked: false, scrolled: false };
@@ -35,13 +36,13 @@ class Navbar extends Component {
         }`}
       >
         <h1>
-          <NavLink
-            className="navbar-logo"
-            to="/"
-            style={{ fontWeight: "bold" }}
-            activeClassName="active"
-          >
-            Amoxtli
+          <NavLink to="/" activeClassName="active">
+            <img
+              src={logo}
+              alt="Amoxtli Logo"
+              className="navbar-logo"
+              style={{ height: "50px", width: "auto" }} // Adjust size as needed
+            />
           </NavLink>
         </h1>
         <div className="menu-icons" onClick={this.handleClick}>
