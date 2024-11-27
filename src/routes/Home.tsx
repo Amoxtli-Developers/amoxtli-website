@@ -45,6 +45,7 @@ function Home() {
   }, [location]);
   return (
     <div>
+
       <Navbar />
       {isLoading && <Preloader />}
       <motion.div

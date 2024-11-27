@@ -12,6 +12,11 @@ import s8 from "../../assets/stories/8.jpeg";
 import s9 from "../../assets/stories/9.jpeg";
 import s10 from "../../assets/stories/10.jpeg";
 import s11 from "../../assets/stories/11.jpeg";
+import s12 from "../../assets/stories/12.jpeg";
+import s13 from "../../assets/stories/13.jpeg";
+import s14 from "../../assets/stories/14.jpeg";
+import s15 from "../../assets/stories/15.jpeg";
+import s16 from "../../assets/stories/16.jpeg";
 import { Box } from "@mui/material";
 
 export function AppleCardDemo() {
@@ -66,6 +71,49 @@ const DummyContent = () => {
 
 const data = [
   {
+    id: "12",
+    category: "Axolotl Refugee Site",
+    title: "Reptilario y Ajolotario Quetzal",
+    src: s12,
+    content: <DummyContent />,
+  },
+  {
+    id: "14",
+    category: "Dj Site",
+    title: "Greek",
+    src: s14,
+    content: <DummyContent />,
+  },
+  {
+    id: "15",
+    category: "Big Data Company Site",
+    title: "Neural Factory",
+    src: s15,
+    content: <DummyContent />,
+  },
+  {
+    id: "13",
+    category: "Fashion Blog",
+    title: "Xianna",
+    src: s13,
+    content: <DummyContent />,
+  },
+  {
+    id: "5",
+    category: "Startup Site",
+    title: "Orza Tech",
+    src: s5,
+    content: <DummyContent />,
+  },
+  {
+    id: "6",
+    category: "Business Site",
+    title: "Psique & Ser",
+    src: s6,
+    content: <DummyContent />,
+  },
+
+  {
     id: "1",
     category: "Single Page",
     title: "Contadores Martínez Carreño y Asociados",
@@ -93,20 +141,7 @@ const data = [
     src: s4,
     content: <DummyContent />,
   },
-  {
-    id: "5",
-    category: "Startup Site",
-    title: "Orza Tech",
-    src: s5,
-    content: <DummyContent />,
-  },
-  {
-    id: "6",
-    category: "Business Site",
-    title: "Psique & Ser",
-    src: s6,
-    content: <DummyContent />,
-  },
+
   {
     id: "7",
     category: "Portfolio & Services Site",
@@ -119,6 +154,13 @@ const data = [
     category: "Photographer Site",
     title: "Salomon Photo",
     src: s8,
+    content: <DummyContent />,
+  },
+  {
+    id: "16",
+    category: "Clothing Manufacturer Site",
+    title: "Faro Sur",
+    src: s16,
     content: <DummyContent />,
   },
   {

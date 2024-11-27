@@ -27,6 +27,7 @@ const BrandCarousel = () => {
 
   return (
     <Box className="section">
+
       <OwlCarousel
         className="owl-theme"
         loop

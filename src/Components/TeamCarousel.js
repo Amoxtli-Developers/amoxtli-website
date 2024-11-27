@@ -1,27 +1,26 @@
 import React from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/pagination";
+import Grid from "@mui/material/Grid";
 import "./TeamCarousel.css";
 
 // Import the CarouselCard component
 import TeamCarouselCard from "./TeamCarouselCard";
 
 import alfa from "../assets/team/alfa.jpg";
-
+import salo from "../assets/team/salo.jpg";
+import isac from "../assets/team/isac.jpg";
+import sofy from "../assets/team/sofy.jpg";
+import ro from "../assets/team/ro.jpg";
 
 function TeamCarousel() {
   const cardDataArray = [
     {
-      image: "image1.jpg",
+      image: salo,
       title: "Salomón Martínez",
       description: "Software Engineer by profession, photographer by passion.",
       badgeContent: "CEO",
     },
     {
-      image: "image2.jpg",
+      image: sofy,
       title: "Sofía Donlucas",
       description: "Software Engineer by profession, dog lover by passion.",
       badgeContent: "CTO",
@@ -32,63 +31,40 @@ function TeamCarousel() {
       description: "Software Engineer by profession, drum player by passion.",
       badgeContent: "Back-end",
     },
-
     {
-      image: "image2.jpg",
+      image: isac,
       title: "Isaac Jacinto",
-      description:
-        "Software Engineer by profession, football player by passion.",
+      description: "Software Engineer by profession, football player by passion.",
       badgeContent: "Database",
     },
     {
-      image: "image2.jpg",
+      image: ro,
       title: "Rodrigo Aldahir",
-      description:
-        "Software Engineer by profession, basketball player by passion.",
+      description: "Software Engineer by profession, basketball player by passion.",
       badgeContent: "Tester",
     },
   ];
 
   return (
-    <div style={{ marginLeft: "1rem", marginRight: "0", marginBottom: "5rem" }}>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          1070: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-          1200: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        }}
-        className="mySwiper"
-      >
+    <div style={{marginBottom: "5rem" }}>
+      <Grid container spacing={4} justifyContent="center">
         {cardDataArray.map((cardData, index) => (
-          <SwiperSlide style={{ justifyContent: "center", display: "flex", paddingLeft: 8, paddingRight: 8 }}>
+          <Grid
+            item
+            key={index}
+            xs={12}    // Full width on extra-small screens
+            sm={6}     // Half width on small screens
+            md={4}     // One-third width on medium screens
+          >
             <TeamCarouselCard
-              key={index}
               title={cardData.title}
               image={cardData.image}
               description={cardData.description}
               badgeContent={cardData.badgeContent}
             />
-          </SwiperSlide>
+          </Grid>
         ))}
-      </Swiper>
+      </Grid>
     </div>
   );
 }

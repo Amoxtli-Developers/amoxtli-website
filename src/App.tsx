@@ -10,6 +10,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import "./styles/tailwind.css";
 import Pricing from "./routes/Pricing";
+import Store from "./routes/Store";
 
 interface WrapperProps {
   children: ReactNode;
@@ -36,6 +37,7 @@ function App() {
           <Route path="/how-it-works" element={<How />} />
           <Route path="/talk-to-us" element={<Talk />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/store" element={<Store />} />
         </Routes>
       </Wrapper>
       

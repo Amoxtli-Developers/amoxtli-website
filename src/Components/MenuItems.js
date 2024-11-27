@@ -19,4 +19,9 @@ export const MenuItems = [
     url: "/pricing",
     cName: "nav-links",
   },
+  {
+    title: "Store",
+    url: "/store",
+    cName: "nav-links",
+  },
 ];

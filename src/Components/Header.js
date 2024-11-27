@@ -11,7 +11,8 @@ const Header = ({ imageUrl, title }) => {
   return (
     <Box className="main-header">
       <Grid container spacing={2} alignItems="center" justifyContent="center">
-        <Grid item xs={12} sm={6}>
+        {/* Left Column: Text */}
+        <Grid item xs={12} sm={7}>
           <div>
             <h1
               className="responsive-title title-edited"
@@ -35,25 +36,30 @@ const Header = ({ imageUrl, title }) => {
 
             <div style={{ textAlign: "right", paddingBottom: "40px" }}>
               <Link to={"/talk-to-us"} target="_blank">
-                <button class="learn-more">
-                  <span class="circle" aria-hidden="true">
-                    <span class="icon arrow"></span>
+                <button className="learn-more">
+                  <span className="circle" aria-hidden="true">
+                    <span className="icon arrow"></span>
                   </span>
-                  <span class="button-text">Let's talk</span>
+                  <span className="button-text">Let's talk</span>
                 </button>
               </Link>
             </div>
           </div>
         </Grid>
-        {/* Right Column: Image */}
-        <Grid item xs={12} sm={6}>
-          <img
-            src={imageUrl}
-            alt="header-logo"
-            style={{ width: "95%", borderRadius: "2rem" }}
-          />
+
+        {/* Right Column: Spline 3D Model */}
+        <Grid item xs={12} sm={5}>
+          <iframe
+            src="https://my.spline.design/axolotol-a2472d52c5a4a7351cf5cd92c57ae472/"
+            frameBorder="0"
+            width="100%"
+            height="400px" // Adjust height as necessary
+            style={{ borderRadius: "2rem" }}
+            title="3D Model"
+          ></iframe>
         </Grid>
       </Grid>
+
       <Grid container spacing={2} sx={{ marginBottom: "5rem" }}>
         <Grid item xs={12} sm={12} md={4}>
           <ValuesCard
@@ -83,6 +89,7 @@ const Header = ({ imageUrl, title }) => {
           />
         </Grid>
       </Grid>
+
       <p
         className="believe flex flex-wrap items-center justify-end"
         style={{ textAlign: "right" }}

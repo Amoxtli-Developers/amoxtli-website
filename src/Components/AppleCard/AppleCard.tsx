@@ -209,6 +209,11 @@ export const CarouselCard = ({
       9: "https://colegiosucre.netlify.app/",
       10: "https://asesorista.com.mx",
       11: "https://skinsecrets.mx",
+      12: "https://reptilarioyajolotarioquetzal.com/",
+      13: "https://xianna.com.mx/",
+      14: "https://djgreek.mx",
+      15: "https://neural-factory.com/",
+      16: "https://farosur.netlify.app/",
     };
 
     const url = urls[card.id];

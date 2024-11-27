@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
 import "./NavbarStyles.css";
 import logo from "../assets/amoxtli.png"; // Adjust the path as needed
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 class Navbar extends Component {
   state = { clicked: false, scrolled: false };
@@ -45,6 +46,7 @@ class Navbar extends Component {
             />
           </NavLink>
         </h1>
+
         <div className="menu-icons" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
@@ -67,7 +69,11 @@ class Navbar extends Component {
           <NavLink className="talkToUs" target="_blank" to="/talk-to-us">
             Talk to us
           </NavLink>
+          <NavLink className="nav-links cart-icon" to="/cart">
+            <ShoppingCartIcon fontSize="large" />
+          </NavLink>
         </ul>
+
       </nav>
     );
   }

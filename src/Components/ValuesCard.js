@@ -6,10 +6,18 @@ import Box from "@mui/material/Box";
 function ValuesCard({ title, paragraph, bgColor, textColor, titleColor }) {
   return (
     <Card
-      sx={{ borderRadius: "2rem", backgroundColor: bgColor, boxShadow: "none" }}
+      sx={{
+        borderRadius: "2rem",
+        backgroundColor: bgColor,
+        boxShadow: "none",
+        height: "100%",
+        display: "flex", // Use flexbox to align content
+        alignItems: "center", // Align content vertically
+        justifyContent: "center", // Align content horizontally
+      }}
       className="shadow"
     >
-      <Box sx={{ textAlign: "left", padding: "50px" }}>
+      <Box sx={{ textAlign: "left", padding: "40px" }}>
         <Typography
           sx={{
             color: titleColor,
